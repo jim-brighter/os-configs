@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Eclipse
+Comment=Eclipse IDE
+Icon=/home/jim/eclipse/jee-2018-09/eclipse/icon.xpm
+Exec=/home/jim/eclipse/jee-2018-09/eclipse/eclipse
+Terminal=false
+Categories=Development;Programming;IDE

@@ -30,6 +30,7 @@ cp wallpaper.jpg ~/Pictures/wallpaper.jpg
 
 cp .Xresources ~/.Xresources
 cp .config/i3/config ~/.config/i3/config
+mkdir -p ~/.config/compton
 cp .config/compton/compton.conf ~/.config/compton/compton.conf
 cp .config/rofi/theme.rasi ~/.config/rofi/theme.rasi
 

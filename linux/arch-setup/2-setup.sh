@@ -30,7 +30,7 @@ cp wallpaper.jpg ~/Pictures/wallpaper.jpg
 
 cp .Xresources ~/.Xresources
 cp .config/i3/config ~/.config/i3/config
-cp .config/compton/compton.config ~/.config/compton/compton.config
+cp .config/compton/compton.conf ~/.config/compton/compton.conf
 cp .config/rofi/theme.rasi ~/.config/rofi/theme.rasi
 
 sudo cp etc/lightdm/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf

@@ -1,13 +1,20 @@
-#!/bin/bash
+#!/bin/sh
 set -ex
-sudo pacman-mirrors -c United_States
-sudo pacman-key --refresh-keys
-sudo pacman -Syu
-sudo pacman -S virtualbox-guest-utils
-sudo systemctl start vboxservice
-sudo systemctl enable vboxservice
-sudo chmod o+rx /media
-sudo gpasswd -a jim vboxsf
-sudo pacman -S firefox gradle eclipse-jee emacs-nox docker docker-compose dbeaver git nodejs npm openssh libxss gconf code ttf-hack
-sudo systemctl enable docker
-sudo gpasswd -a jim docker
+pacman -S xorg lightdm lightdm-gtk-greeter i3 virtualbox-guest-utils firefox gradle eclipse-jee emacs-nox \
+	docker docker-compose dbeaver git nodejs npm openssh libxss gconf code ttf-hack rxvt-unicode noto-fonts \
+	ttf-dejavu lxappearance feh ranger w3m ttf-font-awesome neofetch compton gtop gtk-engine-murrine \
+	gtk-engines papirus-icon-theme zip unzip Xcursorgen inkscape gnome-themes-standard rofi
+
+systemctl start vboxservice
+systemctl enable vboxservice
+systemctl enable lightdm
+systemctl enable docker
+
+chmod o+rx /media
+
+useradd -m -G wheel jim
+passwd jim
+visudo
+
+gpasswd -a jim vboxsf
+gpasswd -a jim docker

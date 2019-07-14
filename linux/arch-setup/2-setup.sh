@@ -32,6 +32,7 @@ cp .Xresources ~/.Xresources
 cp .config/i3/config ~/.config/i3/config
 mkdir -p ~/.config/compton
 cp .config/compton/compton.conf ~/.config/compton/compton.conf
+mkdir -p ~/.config/rofi
 cp .config/rofi/theme.rasi ~/.config/rofi/theme.rasi
 
 sudo cp etc/lightdm/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf

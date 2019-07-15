@@ -23,4 +23,5 @@ curl -LO https://raw.githubusercontent.com/jim-brighter/os-configs/master/linux/
 chmod +x 2-setup.sh
 ./2-setup.sh
 rm 2-setup.sh
+reboot now
 ```

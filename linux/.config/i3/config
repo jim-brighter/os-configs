@@ -168,6 +168,16 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 	position top
+	i3bar_command i3bar -t
+	colors {
+		set $transparent #000000cc
+		background $transparent
+		focused_workspace $transparent $transparent #3498db
+		inactive_workspace $transparent $transparent #afb4ba
+		active_workspace $transparent $transparent #afb4ba
+		urgent_workspace $transparent $transparent #cc575d
+
+	}
 }
 
 # My Additions

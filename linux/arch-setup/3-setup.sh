@@ -1,4 +1,5 @@
 #!/bin/bash
+set -ex
 
 cd ~
 curl -LO https://github.com/vinceliuice/matcha/archive/master.zip

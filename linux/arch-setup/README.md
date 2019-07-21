@@ -1,3 +1,6 @@
+# Arch Setup
+These scripts configure an Arch installation in a Virtualbox VM with i3 window manager and useful software installed
+
 ## Pacstrap
 ```bash
 pacstap /mnt base base-devel networkmanager vim curl

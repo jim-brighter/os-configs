@@ -2,8 +2,7 @@
 set -ex
 docker login
 cd ~
-sudo mount -t vboxsf vm-shared /media/sf_vm-shared
-cp /media/sf_vm-shared/*ssh.tar.gz ./ssh.tar.gz
+cp ~/Downloads/*ssh.tar.gz ./ssh.tar.gz
 tar -zxf ssh.tar.gz
 rm ssh.tar.gz
 chmod 700 .ssh/*
@@ -21,18 +20,7 @@ git config --global user.name "Jim Brighter"
 git config --global user.email "jbrighter92@gmail.com"
 
 cd os-configs/linux/config-files
-cp .bashrc ~/.bashrc
+cat .bashrc >> ~/.bashrc
 cp .emacs ~/.emacs
 cp .exrc ~/.exrc
-
-mkdir ~/Pictures
-cp wallpaper.jpg ~/Pictures/wallpaper.jpg
-
-cp .Xresources ~/.Xresources
-cp .config/i3/config ~/.config/i3/config
-mkdir -p ~/.config/compton
-cp .config/compton/compton.conf ~/.config/compton/compton.conf
-mkdir -p ~/.config/rofi
-cp .config/rofi/theme.rasi ~/.config/rofi/theme.rasi
-
-sudo cp etc/lightdm/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
+cp .config/kwinrc ~/.config/kwinrc

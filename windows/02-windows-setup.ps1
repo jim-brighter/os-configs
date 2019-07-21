@@ -19,9 +19,7 @@ git clone git@github.com:jim-brighter/photodump.git
 git clone git@github.com:jim-brighter/jenkins.git
 git clone git@github.com:jim-brighter/jim-brighter.github.io.git
 git clone git@github.com:jim-brighter/ops-secrets.git
-git clone git@github.com:jim-brighter/profile_backups.git
-git clone git@github.com:jim-brighter/devops-infrastructure.git
-git clone git@github.com:jim-brighter/devops-springboot.git
+git clone git@github.com:jim-brighter/os-configs.git
 
 Set-Location -Path ~/projects/infostellar
 git clone https://github.com/jbrighter/samplejava.git

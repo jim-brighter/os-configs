@@ -1,3 +1,5 @@
+#!/bin/bash
+
 cd ~
 curl -LO https://github.com/vinceliuice/matcha/archive/master.zip
 unzip -q master.zip

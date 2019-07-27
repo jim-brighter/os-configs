@@ -28,11 +28,11 @@ Invoke-RestMethod `
   -Uri https://raw.githubusercontent.com/jim-brighter/os-configs/master/windows/profile.ps1 `
   -OutFile ~/Downloads/profile.ps1
 ```
-    - Move profile to Windows Powershell directory
-    - Make sure Powershell is configured to enable running scripts (in an admin powershell window)
-    ```powershell
-    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
-    ```
+- Move profile to Windows Powershell directory
+- Make sure Powershell is configured to enable running scripts (in an admin powershell window)
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+```
 - Open a new admin powershell window, and run
 ```powershell
 .\01-windows-init.ps1

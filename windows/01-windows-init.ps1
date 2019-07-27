@@ -5,10 +5,11 @@ if (!(Test-Path ~/.ssh/id_rsa)) {
   exit
 }
 
-choco install -y `
+choco install -y --ignorechecksum `
   7zip `
   adobereader `
   adoptopenjdk11 `
+  battle.net `
   discord `
   docker-desktop `
   eclipse `
@@ -28,8 +29,6 @@ choco install -y `
   streamlabs-obs `
   virtualbox `
   vscode
-
-choco install -y --ignorechecksum battle.net
 
 Invoke-RestMethod `
   -Uri https://github.com/digitalocean/doctl/releases/download/v1.20.1/doctl-1.20.1-windows-4.0-amd64.zip `

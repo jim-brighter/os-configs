@@ -26,6 +26,7 @@ choco install -y `
   qbittorrent `
   steam `
   streamlabs-obs `
+  virtualbox `
   vscode
 
 choco install -y --ignorechecksum battle.net

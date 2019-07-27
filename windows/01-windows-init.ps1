@@ -25,6 +25,7 @@ choco install -y --ignorechecksum `
   powershell-core `
   python `
   qbittorrent `
+  rufus `
   steam `
   streamlabs-obs `
   virtualbox `

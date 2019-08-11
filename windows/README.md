@@ -5,7 +5,8 @@
     - Install CAM on desktop
 - Install upgrade to Windows 10 Pro
 - Install any new Windows updates
-- Install Ubuntu and Spotify from Windows Store
+- Install Ubuntu, Spotify, and Slack from Windows Store
+    - Also any other Linux distros (Debian, OpenSUSE)
     - Also a good time to remove bloatware and games
 - Enable WSL and reboot
 ```powershell
@@ -28,20 +29,20 @@ Invoke-RestMethod `
   -Uri https://raw.githubusercontent.com/jim-brighter/os-configs/master/windows/profile.ps1 `
   -OutFile ~/Downloads/profile.ps1
 ```
-- Move profile to Windows Powershell directory
 - Make sure Powershell is configured to enable running scripts (in an admin powershell window)
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 ```
+- Move `profile.ps1` to Windows Powershell directory
 - Open a new admin powershell window, and run
 ```powershell
 .\01-windows-init.ps1
 ```
-- Reboot when finished
 - Open a new admin powershell window, and run
 ```powershell
 .\02-windows-setup.ps1
 ```
+- Reboot
 - Configure installed apps
 ## Fixing the Sleep after 2 Minutes Bug
 - Open the registry and navigate to:

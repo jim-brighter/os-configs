@@ -47,3 +47,6 @@ Set-Location -Path ~/projects/misc/maximus
 git clone git@github.com:jim-brighter/maximus-infrastructure.git
 git clone git@github.com:jim-brighter/maximus-sampleapp.git
 git clone git@github.com:jim-brighter/maximus-demo.git
+
+clear
+neofetch

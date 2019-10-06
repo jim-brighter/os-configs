@@ -1,4 +1,8 @@
+# Install Chocolatey
 Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+
+# Install Scoop
+iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
 
 if (!(Test-Path ~/.ssh/id_rsa)) {
   Write-Warning "ssh id_rsa file not found, exiting..."
@@ -31,6 +35,8 @@ choco install -y --ignorechecksum `
   virtualbox `
   vlc `
   vscode
+
+scoop install git neofetch
 
 Invoke-RestMethod `
   -Uri https://github.com/digitalocean/doctl/releases/download/v1.20.1/doctl-1.20.1-windows-4.0-amd64.zip `

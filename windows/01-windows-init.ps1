@@ -29,6 +29,7 @@ choco install -y --ignorechecksum `
   steam `
   streamlabs-obs `
   virtualbox `
+  vlc `
   vscode
 
 Invoke-RestMethod `

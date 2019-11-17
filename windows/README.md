@@ -2,7 +2,7 @@
 - Follow Windows installer until you get to the Desktop
 - Install all available Windows updates
 - Install drivers for chipset, storage, sound, graphics, and networking as needed
-    - Install CAM on desktop
+    - Install ASUS software suite on desktop
 - Install upgrade to Windows 10 Pro
 - Install any new Windows updates
 - Install Ubuntu, Spotify, and Slack from Windows Store

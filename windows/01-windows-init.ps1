@@ -14,14 +14,17 @@ choco install -y --ignorechecksum `
   adobereader `
   adoptopenjdk11 `
   battle.net `
+  cpu-z `
   discord `
   docker-desktop `
   eclipse `
+  epicgameslauncher `
   Firefox `
   git `
   google-backup-and-sync `
   GoogleChrome `
   gradle `
+  hwmonitor `
   nodejs-lts `
   nordvpn `
   notepadplusplus `

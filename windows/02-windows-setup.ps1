@@ -6,12 +6,7 @@ git config --global core.autocrlf true
 
 mkdir ~/projects
 mkdir ~/projects/personal
-mkdir ~/projects/infostellar
-mkdir ~/projects/misc
-
-Set-Location -Path ~/projects/misc
-mkdir shyam
-mkdir maximus
+mkdir ~/projects/maximus
 
 Set-Location -Path ~/projects/personal
 git clone git@github.com:jim-brighter/planner.git

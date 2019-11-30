@@ -4,7 +4,7 @@
 brew install openjdk@11 git gradle node@12 python doctl neofetch
 
 brew tap caskroom/cask
-brew cask install docker eclipse-jee google-backup-and-sync google-chrome nordvpn visual-studio-code steam sublime-text iterm2
+brew cask install docker eclipse-jee google-backup-and-sync google-chrome nordvpn visual-studio-code steam sublime-text iterm2 slack spotify
 
 git config --global user.name "Jim Brighter"
 git config --global user.email "jbrighter92@gmail.com"

@@ -14,7 +14,6 @@ choco install -y --ignorechecksum `
   adobereader `
   adoptopenjdk11 `
   battle.net `
-  cpu-z `
   discord `
   docker-desktop `
   eclipse `
@@ -24,33 +23,15 @@ choco install -y --ignorechecksum `
   google-backup-and-sync `
   GoogleChrome `
   gradle `
-  hwmonitor `
   nodejs-lts `
   nordvpn `
-  notepadplusplus `
   origin `
-  powershell-core `
   python `
   qbittorrent `
-  rufus `
   steam `
   streamlabs-obs `
-  virtualbox `
+  sublimetext3 `
   vlc `
   vscode
 
-scoop install git neofetch
-
-Invoke-RestMethod `
-  -Uri https://github.com/digitalocean/doctl/releases/download/v1.20.1/doctl-1.20.1-windows-4.0-amd64.zip `
-  -OutFile ~/Downloads/doctl-1.20.1-windows-4.0-amd64.zip
-
-Set-Location -Path ~/Downloads
-Expand-Archive -Path doctl-1.20.1-windows-4.0-amd64.zip
-Move-Item -Path doctl-1.20.1-windows-4.0-amd64 -Destination ~
-
-[Environment]::SetEnvironmentVariable(`
-  "Path", `
-  [Environment]::GetEnvironmentVariable("Path", `
-    [EnvironmentVariableTarget]::User) + ";C:\Users\jimbr\doctl-1.20.1-windows-4.0-amd64", `
-  [EnvironmentVariableTarget]::User)
+scoop install git neofetch doctl

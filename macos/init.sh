@@ -1,10 +1,32 @@
 #!/bin/bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-brew install openjdk@11 git gradle node@12 python doctl neofetch
+brew install \
+    doctl \
+    git \
+    gradle \
+    neofetch \
+    node@12 \
+    openjdk@11 \
+    python
 
 brew tap caskroom/cask
-brew cask install docker eclipse-jee google-backup-and-sync google-chrome nordvpn visual-studio-code steam sublime-text iterm2 slack spotify
+brew cask install \
+    discord \
+    docker \
+    eclipse-jee \
+    firefox \
+    google-backup-and-sync \
+    google-chrome \
+    iterm2 \
+    nordvpn \
+    qbittorrent \
+    slack \
+    spotify \
+    steam \
+    sublime-text \
+    visual-studio-code \
+    vlc
 
 git config --global user.name "Jim Brighter"
 git config --global user.email "jbrighter92@gmail.com"
@@ -29,6 +51,8 @@ cd ~/projects/skyhook
 git clone git@github.com:skyhook-cli/skyhook-cli.git
 git clone git@github.com:skyhook-cli/skyhook-templates.git
 git clone git@github.com:skyhook-cli/sampleapp.git
+
+pip3 install awscli --upgrade
 
 clear
 neofetch

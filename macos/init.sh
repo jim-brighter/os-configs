@@ -1,4 +1,9 @@
 #!/bin/bash
+
+set -ex
+
+xcode-select --install
+
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew install \
@@ -6,12 +11,26 @@ brew install \
     git \
     gradle \
     neofetch \
-    node@12 \
-    openjdk@11 \
+    nvm \
     python
 
-brew tap caskroom/cask
+mkdir ~/.nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh"
+[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm"
+
+touch ~/.bash_profile
+echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.bash_profile
+echo '[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh"' >> ~/.bash_profile
+echo '[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm"' >> ~/.bash_profile
+
+nvm install 12
+pip3 install awscli --upgrade
+
+brew cask
+brew tap AdoptOpenJDK/openjdk
 brew cask install \
+    adoptopenjdk11 \
     discord \
     docker \
     eclipse-jee \
@@ -51,8 +70,6 @@ cd ~/projects/skyhook
 git clone git@github.com:skyhook-cli/skyhook-cli.git
 git clone git@github.com:skyhook-cli/skyhook-templates.git
 git clone git@github.com:skyhook-cli/sampleapp.git
-
-pip3 install awscli --upgrade
 
 clear
 neofetch

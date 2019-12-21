@@ -2,6 +2,14 @@
 
 set -ex
 
+if [ ! -f ~/.ssh/id_rsa ]; then 
+    echo "ssh id_rsa file doesn't exist, exiting now!"
+    exit 1
+else 
+    echo "ssh id_rsa file exists, continuing..."
+fi
+
+
 xcode-select --install
 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"

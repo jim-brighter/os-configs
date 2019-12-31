@@ -9,7 +9,6 @@ else
     echo "ssh id_rsa file exists, continuing..."
 fi
 
-
 xcode-select --install
 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -31,6 +30,11 @@ touch ~/.bash_profile
 echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.bash_profile
 echo '[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh"' >> ~/.bash_profile
 echo '[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm"' >> ~/.bash_profile
+
+touch ~/.zprofile
+echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.zprofile
+echo '[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh"' >> ~/.zprofile
+echo '[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm"' >> ~/.zprofile
 
 nvm install 12
 pip3 install awscli --upgrade
@@ -54,6 +58,12 @@ brew cask install \
     sublime-text \
     visual-studio-code \
     vlc
+
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+git clone https://github.com/ryanoasis/nerd-fonts.git ~/nerd-fonts
+cd ~/nerd-fonts
+./install.sh
 
 git config --global user.name "Jim Brighter"
 git config --global user.email "jbrighter92@gmail.com"

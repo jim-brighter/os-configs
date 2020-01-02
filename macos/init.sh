@@ -91,6 +91,7 @@ git clone git@github.com:skyhook-cli/sampleapp.git
 clear
 neofetch
 
+echo
 echo '--------------------------------------------------'
 echo 'Remember to set the following in ~/.zshrc:'
 echo 'ZSH_THEME="powerlevel9k/powerlevel9k"'

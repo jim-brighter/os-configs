@@ -61,9 +61,8 @@ brew cask install \
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
-git clone https://github.com/ryanoasis/nerd-fonts.git ~/nerd-fonts
-cd ~/nerd-fonts
-./install.sh
+brew tap homebrew/cask-fonts
+brew cask install font-meslo-nerd-font-mono
 
 git config --global user.name "Jim Brighter"
 git config --global user.email "jbrighter92@gmail.com"
@@ -91,3 +90,11 @@ git clone git@github.com:skyhook-cli/sampleapp.git
 
 clear
 neofetch
+
+echo '--------------------------------------------------'
+echo 'Remember to set the following in ~/.zshrc:'
+echo 'ZSH_THEME="powerlevel9k/powerlevel9k"'
+echo 'POWERLEVEL9K_PROMPT_ON_NEWLINE=true'
+echo "POWERLEVEL9K_MODE='nerdfont-complete'"
+echo
+echo 'Then change iTerm2 font to MesloLGM Nerd Font Mono'

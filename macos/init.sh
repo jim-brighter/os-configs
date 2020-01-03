@@ -41,12 +41,14 @@ pip3 install awscli --upgrade
 
 brew cask
 brew tap AdoptOpenJDK/openjdk
+brew tap homebrew/cask-fonts
 brew cask install \
     adoptopenjdk11 \
     discord \
     docker \
     eclipse-jee \
     firefox \
+    font-meslo-nerd-font-mono \
     google-backup-and-sync \
     google-chrome \
     iterm2 \
@@ -61,8 +63,6 @@ brew cask install \
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
-brew tap homebrew/cask-fonts
-brew cask install font-meslo-nerd-font-mono
 
 git config --global user.name "Jim Brighter"
 git config --global user.email "jbrighter92@gmail.com"

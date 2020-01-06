@@ -1,18 +1,32 @@
 #!/bin/bash
 
-set -ex
+set -e
 
+function log() {
+    echo "==> $1"
+}
+
+log "Checking if ~/.ssh/id_rsa exists"
 if [ ! -f ~/.ssh/id_rsa ]; then 
     echo "ssh id_rsa file doesn't exist, exiting now!"
     exit 1
-else 
-    echo "ssh id_rsa file exists, continuing..."
 fi
 
+log "Installing xcode command line tools"
 xcode-select --install
 
+DONE_INPUT=""
+read -p "Enter 'done' when xcode command line tools are finished installing: " DONE_INPUT
+
+if [ $DONE_INPUT != "done" ]; then
+    echo "not 'done'"
+    exit 1
+fi
+
+log "Installing homebrew"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+log "Installing cli tools via homebrew"
 brew install \
     doctl \
     git \
@@ -21,6 +35,7 @@ brew install \
     nvm \
     python
 
+log "Setting up NVM config in this shell, .bash_profile, and .zprofile"
 mkdir ~/.nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh"
@@ -36,9 +51,11 @@ echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.zprofile
 echo '[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh"' >> ~/.zprofile
 echo '[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm"' >> ~/.zprofile
 
+log "Installing nodejs and awscli"
 nvm install 12
 pip3 install awscli --upgrade
 
+log "Installing homebrew casks"
 brew cask
 brew tap AdoptOpenJDK/openjdk
 brew tap homebrew/cask-fonts
@@ -53,6 +70,7 @@ brew cask install \
     google-chrome \
     iterm2 \
     nordvpn \
+    powershell \
     qbittorrent \
     slack \
     spotify \
@@ -61,12 +79,15 @@ brew cask install \
     visual-studio-code \
     vlc
 
+log "Installing ohmyzsh and powerlevel9k"
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
+log "Configuring git"
 git config --global user.name "Jim Brighter"
 git config --global user.email "jbrighter92@gmail.com"
 
+log "Creating directories and cloning repos"
 mkdir -p ~/projects/personal
 mkdir -p ~/projects/resume-sleuth
 mkdir -p ~/projects/skyhook
@@ -92,6 +113,8 @@ clear
 neofetch
 
 echo
+log "Done!"
+
 echo '--------------------------------------------------'
 echo 'Remember to set the following in ~/.zshrc:'
 echo 'ZSH_THEME="powerlevel9k/powerlevel9k"'

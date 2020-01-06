@@ -97,5 +97,9 @@ echo 'Remember to set the following in ~/.zshrc:'
 echo 'ZSH_THEME="powerlevel9k/powerlevel9k"'
 echo 'POWERLEVEL9K_PROMPT_ON_NEWLINE=true'
 echo "POWERLEVEL9K_MODE='nerdfont-complete'"
+echo 'POWERLEVEL9K_SHORTEN_DIR_LENGTH="1"'
+echo 'POWERLEVEL9K_SHORTEN_STRATEGY="truncate_to_last"'
+echo 'POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir vcs)'
+echo 'POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)'
 echo
 echo 'Then change iTerm2 font to MesloLGM Nerd Font Mono'

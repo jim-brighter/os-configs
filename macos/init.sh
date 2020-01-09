@@ -18,6 +18,8 @@ function initMac() {
 
     DONE_INPUT=""
     read -p "Enter 'done' when xcode command line tools are finished installing: " DONE_INPUT
+    
+    echo
 
     if [ $DONE_INPUT != "done" ]; then
         echo "not 'done'"
@@ -130,5 +132,5 @@ function initMac() {
     echo 'Then change iTerm2 font to MesloLGM Nerd Font Mono'
 }
 
-initMac | tee init.log
+initMac 2>&1 | tee init.log
 

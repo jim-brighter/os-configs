@@ -8,8 +8,8 @@ function log() {
 
 function initMac() {
     log "Checking if ~/.ssh/id_rsa exists"
-    if [ ! -f ~/.ssh/id_rsa ]; then 
-        echo "ssh id_rsa file doesn't exist, exiting now!"
+    if [ ! -f ~/.ssh/id_rsa ]; then
+        log "ssh id_rsa file doesn't exist, exiting now!"
         exit 1
     fi
 
@@ -18,11 +18,10 @@ function initMac() {
 
     DONE_INPUT=""
     read -p "Enter 'done' when xcode command line tools are finished installing: " DONE_INPUT
-    
     echo
 
     if [ $DONE_INPUT != "done" ]; then
-        echo "not 'done'"
+        log "not 'done'"
         exit 1
     fi
 
@@ -75,17 +74,22 @@ function initMac() {
     log "Installing ohmyzsh and powerlevel9k"
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+    curl -L https://raw.githubusercontent.com/jim-brighter/os-configs/master/macos/robbyrussell.zsh-theme -o ~/.oh-my-zsh/custom/themes/robbyrussell.zsh-theme
 
+    log "Setup zsh (and bash) config"
     touch ~/.bash_profile
-    echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.bash_profile
-    echo '[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh"' >> ~/.bash_profile
-    echo '[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm"' >> ~/.bash_profile
-
     touch ~/.zshrc
     touch ~/.zshenv
-    echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.zshenv
-    echo '[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh"' >> ~/.zshrc
-    echo '[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm"' >> ~/.zshrc
+
+    curl -LO https://raw.githubusercontent.com/jim-brighter/os-configs/master/macos/bash_profile.bak
+    curl -LO https://raw.githubusercontent.com/jim-brighter/os-configs/master/macos/zshrc.bak
+    curl -LO https://raw.githubusercontent.com/jim-brighter/os-configs/master/macos/zshenv.bak
+
+    cat bash_profile.bak >> ~/.bash_profile
+    cat zshrc.bak >> ~/.zshrc
+    cat zshenv.bak >> ~/.zshenv
+
+    rm bash_profile.bak zshrc.bak zshenv.bak
 
     log "Configuring git"
     git config --global user.name "Jim Brighter"
@@ -118,19 +122,7 @@ function initMac() {
 
     echo
     log "Done!"
-
-    echo '--------------------------------------------------'
-    echo 'Remember to set the following in ~/.zshrc:'
-    echo 'ZSH_THEME="powerlevel9k/powerlevel9k"'
-    echo 'POWERLEVEL9K_PROMPT_ON_NEWLINE=true'
-    echo 'POWERLEVEL9K_MODE="nerdfont-complete"'
-    echo 'POWERLEVEL9K_SHORTEN_DIR_LENGTH="1"'
-    echo 'POWERLEVEL9K_SHORTEN_STRATEGY="truncate_to_last"'
-    echo 'POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir vcs)'
-    echo 'POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)'
-    echo
-    echo 'Then change iTerm2 font to MesloLGM Nerd Font Mono'
+    log "Remember to read the README for the rest of setup instructions"
 }
 
 initMac 2>&1 | tee init.log
-

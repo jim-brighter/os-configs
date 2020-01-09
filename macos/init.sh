@@ -35,21 +35,11 @@ brew install \
     nvm \
     python
 
-log "Setting up NVM config in this shell, .bash_profile, and .zprofile"
+log "Setting up NVM config in this shell"
 mkdir ~/.nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh"
 [ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm"
-
-touch ~/.bash_profile
-echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.bash_profile
-echo '[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh"' >> ~/.bash_profile
-echo '[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm"' >> ~/.bash_profile
-
-touch ~/.zprofile
-echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.zprofile
-echo '[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh"' >> ~/.zprofile
-echo '[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm"' >> ~/.zprofile
 
 log "Installing nodejs and awscli"
 nvm install 12
@@ -82,6 +72,17 @@ brew cask install \
 log "Installing ohmyzsh and powerlevel9k"
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+
+touch ~/.bash_profile
+echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.bash_profile
+echo '[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh"' >> ~/.bash_profile
+echo '[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm"' >> ~/.bash_profile
+
+touch ~/.zshrc
+touch ~/.zshenv
+echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.zshenv
+echo '[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh"' >> ~/.zshrc
+echo '[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm"' >> ~/.zshrc
 
 log "Configuring git"
 git config --global user.name "Jim Brighter"

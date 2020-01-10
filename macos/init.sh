@@ -84,6 +84,8 @@ function initMac() {
     curl -LO https://raw.githubusercontent.com/jim-brighter/os-configs/master/macos/bash_profile.bak
     curl -LO https://raw.githubusercontent.com/jim-brighter/os-configs/master/macos/zshrc.bak
     curl -LO https://raw.githubusercontent.com/jim-brighter/os-configs/master/macos/zshenv.bak
+    
+    curl -L https://raw.githubusercontent.com/jim-brighter/os-configs/master/macos/vimrc.bak -o ~/.vimrc
 
     cat bash_profile.bak >> ~/.bash_profile
     cat zshrc.bak >> ~/.zshrc

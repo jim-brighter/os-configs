@@ -33,6 +33,7 @@ function initMac() {
         doctl \
         git \
         gradle \
+        lolcat \
         neofetch \
         nvm \
         python
@@ -120,7 +121,7 @@ function initMac() {
     git clone git@github.com:skyhook-cli/sampleapp.git
 
     clear
-    neofetch
+    neofetch | lolcat
 
     echo
     log "Done!"

@@ -13,6 +13,7 @@ chmod +x init.sh
 ```bash
 bash init.sh
 ```
+- Copy `SF Mono` font files out of Terminal.app into Font Book
 - For Powerlevel9k, set variables in .zshrc and then set fonts to `MesloLGM Nerd Font Mono`:
 ```bash
 ZSH_THEME="powerlevel9k/powerlevel9k"
@@ -60,5 +61,3 @@ POWERLEVEL9K_WHITESPACE_BETWEEN_RIGHT_SEGMENTS="  "
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir_joined vcs_joined)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator_joined background_jobs_joined)
 ```
-
-- For robbyrussell, don't need to change any variables, just copy `SF Mono` font files out of Terminal.app into Font Book

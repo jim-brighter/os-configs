@@ -44,6 +44,7 @@
             "hidden": false,
             "name": "Ubuntu-18.04",
             "source": "Windows.Terminal.Wsl",
+            "icon": "C:\\Users\\jimbr\\icons\\ubuntu-icon.png",
             "fontFace": "MesloLGM Nerd Font Mono",
             "fontSize": 10,
             "useAcrylic": true,

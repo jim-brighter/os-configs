@@ -7,6 +7,10 @@
 
     "defaultProfile": "{417d997b-e111-4fe9-99d9-c8b2ddc19f5b}",
 
+    "initialCols": 150,
+    "initialRows": 40,
+
+
     "profiles":
     [
         {

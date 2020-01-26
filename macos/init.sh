@@ -85,8 +85,9 @@ function initMac() {
     curl -LO https://raw.githubusercontent.com/jim-brighter/os-configs/master/macos/bash_profile.bak
     curl -LO https://raw.githubusercontent.com/jim-brighter/os-configs/master/macos/zshrc.bak
     curl -LO https://raw.githubusercontent.com/jim-brighter/os-configs/master/macos/zshenv.bak
-    
+
     curl -L https://raw.githubusercontent.com/jim-brighter/os-configs/master/macos/vimrc.bak -o ~/.vimrc
+    curl -L https://raw.githubusercontent.com/jim-brighter/os-configs/master/macos/powerlevel9k.cfg -o ~/Downloads/powerlevel9k.cfg
 
     cat bash_profile.bak >> ~/.bash_profile
     cat zshrc.bak >> ~/.zshrc
@@ -120,8 +121,9 @@ function initMac() {
     git clone git@github.com:skyhook-cli/skyhook-templates.git
     git clone git@github.com:skyhook-cli/sampleapp.git
 
-    clear
-    neofetch | lolcat
+    cd
+
+    clear && neofetch | lolcat
 
     echo
     log "Done!"

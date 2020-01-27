@@ -87,7 +87,7 @@ function initMac() {
     curl -LO https://raw.githubusercontent.com/jim-brighter/os-configs/master/macos/zshenv.bak
 
     curl -L https://raw.githubusercontent.com/jim-brighter/os-configs/master/macos/vimrc.bak -o ~/.vimrc
-    curl -L https://raw.githubusercontent.com/jim-brighter/os-configs/master/macos/powerlevel9k.cfg -o ~/Downloads/powerlevel9k.cfg
+    curl -L https://raw.githubusercontent.com/jim-brighter/os-configs/master/macos/powerlevel9k.sh.bak -o ~/.powerlevel9k.sh
 
     cat bash_profile.bak >> ~/.bash_profile
     cat zshrc.bak >> ~/.zshrc

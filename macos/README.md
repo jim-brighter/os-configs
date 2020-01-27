@@ -14,4 +14,4 @@ chmod +x init.sh
 bash init.sh
 ```
 - Copy `SF Mono` font files out of Terminal.app into Font Book
-- For Powerlevel9k, set variables from `powerline.cfg` in .zshrc and then set fonts to `MesloLGM Nerd Font Mono`:
+- For Powerlevel9k, set theme to `powerlevel9k/powerlevel9k` and source `.powerlevel9k.sh` in .zshrc, and then set fonts to `MesloLGM Nerd Font Mono`:

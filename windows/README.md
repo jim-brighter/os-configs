@@ -44,6 +44,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 ```
 - Reboot
 - Configure installed apps
+
 ## Fixing the Sleep after 2 Minutes Bug
 - Open the registry and navigate to:
 ```

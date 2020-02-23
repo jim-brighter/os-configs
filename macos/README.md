@@ -14,7 +14,8 @@
   bash init.sh
   ```
 - Copy `SF Mono` font files out of Terminal.app into Font Book
-- For Powerlevel9k, set theme to `powerlevel9k/powerlevel9k` and source `.powerlevel9k.sh` in .zshrc, and then set fonts to either `MesloLGM Nerd Font Mono` or `SFMono NF`:
+- Copy `SF Mono Patched` font files out of this repo into Font Book
+- For Powerlevel9k, set theme to `powerlevel9k/powerlevel9k` and source `.powerlevel9k.sh` in `.zshrc`, and then set fonts to either `MesloLGM Nerd Font Mono` or `SFMono NF`
 - For reference: to patch SF Mono with Nerd Fonts:
   - Clone the nerd-fonts github repo
   - Copy the SF Mono .otf files into a folder `SF-Mono` within nerd-fonts folder

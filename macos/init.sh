@@ -75,7 +75,6 @@ function initMac() {
     log "Installing ohmyzsh and powerlevel9k"
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
-    curl -L https://raw.githubusercontent.com/jim-brighter/os-configs/master/macos/robbyrussell.zsh-theme -o ~/.oh-my-zsh/custom/themes/robbyrussell.zsh-theme
 
     log "Setup zsh (and bash) config"
     touch ~/.bash_profile

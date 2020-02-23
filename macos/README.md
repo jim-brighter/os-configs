@@ -1,7 +1,7 @@
 ## MacOS Setup Instructions
 - Follow MacOS Installer until you get to the Desktop
 - Install all available MacOS updates
-- Install BetterSnapTool and any updates from the App Store
+- Install BetterSnapTool (optional) and any updates from the App Store
 - Download ssh key from Google Drive and untar it into home directory
   - `chmod` the file appropriately
 - Download the setup script from this folder

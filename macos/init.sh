@@ -53,7 +53,7 @@ function initMac() {
     brew tap AdoptOpenJDK/openjdk
     brew tap homebrew/cask-fonts
     brew cask install \
-        adoptopenjdk11 \
+        adoptopenjdk8 \
         discord \
         docker \
         eclipse-jee \

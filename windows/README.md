@@ -44,6 +44,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 ```
 - Reboot
 - Configure installed apps
+- Get the CaskaydiaCove NF font from Nerd Fonts
 
 ## Fixing the Sleep after 2 Minutes Bug
 - Open the registry and navigate to:

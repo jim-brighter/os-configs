@@ -25,6 +25,6 @@
 - Run below shell script to patch all font files (run with `bash` instead of `zsh`)
   ```bash
   for font in $(ls -1 ./SF-Mono); do
-    fontforge -script font-patcher -c ./SF-Mono/"$font" -out ./SF-Mono-Patched;
+    fontforge -script font-patcher -c -s ./SF-Mono/"$font" -out ./SF-Mono-Patched;
   done
   ```

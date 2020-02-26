@@ -5,7 +5,7 @@
     - Install ASUS software suite on desktop
 - Install upgrade to Windows 10 Pro
 - Install any new Windows updates
-- Install Ubuntu, Spotify, and Slack from Windows Store
+- Install Ubuntu, Spotify, Windows Terminal, and Slack from Windows Store
     - Also any other Linux distros (Debian, OpenSUSE)
     - Also a good time to remove bloatware and games
 - Enable WSL and reboot

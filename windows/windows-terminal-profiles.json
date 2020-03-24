@@ -71,6 +71,20 @@
             "cursorShape": "filledBox"
         },
         {
+        	"guid": "{c65bb780-0918-49b5-9c39-46db9aafc43a}",
+        	"hidden": false,
+        	"icon": "C:\\Users\\jimbr\\icons\\arch.png",
+        	"name": "Arch Container",
+        	"commandline": "powershell.exe -NoExit -Command \"docker run -it --rm --entrypoint /bin/bash archlinux:latest\"",
+        	"fontFace": "CaskaydiaCove NF",
+        	"fontSize": 11,
+        	"useAcrylic": true,
+        	"acrylicOpacity": 0.9,
+        	"tabTitle": "[Docker] Arch",
+        	"suppressApplicationTitle": true,
+        	"cursorShape": "filledBox"
+        },
+        {
             "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
             "hidden": true,
             "name": "Azure Cloud Shell",

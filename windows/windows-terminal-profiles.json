@@ -89,7 +89,7 @@
             "acrylicOpacity": 0.9,
             "tabTitle": "CMD",
             "cursorShape": "filledBox"
-        },
+        }
     ],
 
     // Add custom color schemes to this array

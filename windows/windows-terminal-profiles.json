@@ -13,6 +13,21 @@
 
     "profiles":
     [
+		{
+            "guid": "{417d997b-e111-4fe9-99d9-c8b2ddc19f5b}",
+            "hidden": false,
+            "name": "Git Bash",
+            "commandline": "C:\\Program Files\\Git\\bin\\bash.exe --login",
+            "icon": "C:\\Program Files\\Git\\mingw64\\share\\git\\git-for-windows.ico",
+            "fontFace": "CaskaydiaCove NF",
+            "fontSize": 11,
+            "useAcrylic": true,
+            "acrylicOpacity": 0.9,
+            "tabTitle": "Git Bash",
+            "suppressApplicationTitle": true,
+            "startingDirectory": "%HOMEDRIVE%%HOMEPATH%",
+            "cursorShape": "filledBox"
+        },
         {
             // Make changes here to the powershell.exe profile
             "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -24,19 +39,6 @@
             "useAcrylic": true,
             "acrylicOpacity": 0.9,
             "tabTitle": "Powershell",
-            "cursorShape": "filledBox"
-        },
-        {
-            // Make changes here to the cmd.exe profile
-            "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-            "name": "cmd",
-            "commandline": "cmd.exe",
-            "fontFace": "CaskaydiaCove NF",
-            "fontSize": 11,
-            "hidden": true,
-            "useAcrylic": true,
-            "acrylicOpacity": 0.9,
-            "tabTitle": "CMD",
             "cursorShape": "filledBox"
         },
         {
@@ -54,21 +56,6 @@
             "suppressApplicationTitle": true,
             "cursorShape": "filledBox"
 
-        },
-        {
-            "guid": "{417d997b-e111-4fe9-99d9-c8b2ddc19f5b}",
-            "hidden": false,
-            "name": "Git Bash",
-            "commandline": "C:\\Program Files\\Git\\bin\\bash.exe --login",
-            "icon": "C:\\Program Files\\Git\\mingw64\\share\\git\\git-for-windows.ico",
-            "fontFace": "CaskaydiaCove NF",
-            "fontSize": 11,
-            "useAcrylic": true,
-            "acrylicOpacity": 0.9,
-            "tabTitle": "Git Bash",
-            "suppressApplicationTitle": true,
-            "startingDirectory": "%HOMEDRIVE%%HOMEPATH%",
-            "cursorShape": "filledBox"
         },
         {
         	"guid": "{c65bb780-0918-49b5-9c39-46db9aafc43a}",
@@ -89,7 +76,20 @@
             "hidden": true,
             "name": "Azure Cloud Shell",
             "source": "Windows.Terminal.Azure"
-        }
+        },
+        {
+            // Make changes here to the cmd.exe profile
+            "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+            "name": "cmd",
+            "commandline": "cmd.exe",
+            "fontFace": "CaskaydiaCove NF",
+            "fontSize": 11,
+            "hidden": true,
+            "useAcrylic": true,
+            "acrylicOpacity": 0.9,
+            "tabTitle": "CMD",
+            "cursorShape": "filledBox"
+        },
     ],
 
     // Add custom color schemes to this array

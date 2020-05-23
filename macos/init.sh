@@ -50,7 +50,9 @@ function initMac() {
     pip3 install awscli --upgrade
 
     log "Installing homebrew casks"
+    brew tap AdoptOpenJDK/openjdk
     brew cask install \
+        adoptopenjdk11 \
         discord \
         docker \
         eclipse-jee \

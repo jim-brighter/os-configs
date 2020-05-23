@@ -1,1 +1,6 @@
+### ENV VARS ###
 export NVM_DIR="$HOME/.nvm"
+export JAVA_HOME="/usr/local/opt/openjdk@11"
+
+### PATH ###
+export PATH=$JAVA_HOME/bin:$PATH

@@ -32,6 +32,7 @@ function initMac() {
     brew install \
         doctl \
         git \
+        openjdk@11 \
         gradle \
         lolcat \
         neofetch \
@@ -49,16 +50,11 @@ function initMac() {
     pip3 install awscli --upgrade
 
     log "Installing homebrew casks"
-    brew cask
-    brew tap AdoptOpenJDK/openjdk
-    brew tap homebrew/cask-fonts
     brew cask install \
-        adoptopenjdk8 \
         discord \
         docker \
         eclipse-jee \
         firefox \
-        font-meslo-nerd-font-mono \
         google-backup-and-sync \
         google-chrome \
         iterm2 \

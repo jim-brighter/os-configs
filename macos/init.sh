@@ -82,6 +82,7 @@ function initMac() {
     curl -LO https://raw.githubusercontent.com/jim-brighter/os-configs/master/macos/bash_profile.bak
     curl -LO https://raw.githubusercontent.com/jim-brighter/os-configs/master/macos/zshrc.bak
     curl -LO https://raw.githubusercontent.com/jim-brighter/os-configs/master/macos/zshenv.bak
+    curl -LO https://raw.githubusercontent.com/jim-brighter/os-configs/master/macos/zprofile.bak
 
     curl -L https://raw.githubusercontent.com/jim-brighter/os-configs/master/macos/vimrc.bak -o ~/.vimrc
     curl -L https://raw.githubusercontent.com/jim-brighter/os-configs/master/macos/powerlevel9k.sh.bak -o ~/.powerlevel9k.sh
@@ -89,8 +90,9 @@ function initMac() {
     cat bash_profile.bak >> ~/.bash_profile
     cat zshrc.bak >> ~/.zshrc
     cat zshenv.bak >> ~/.zshenv
+    cat zprofile.bak >> ~/.zprofile
 
-    rm bash_profile.bak zshrc.bak zshenv.bak
+    rm bash_profile.bak zshrc.bak zshenv.bak zprofile.bak
 
     log "Configuring git"
     git config --global user.name "Jim Brighter"

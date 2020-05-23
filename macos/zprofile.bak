@@ -1,0 +1,7 @@
+# Override MacOS stupid path setter
+
+[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh"
+[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm"
+
+export PATH=$JAVA_HOME/bin:$PATH
+

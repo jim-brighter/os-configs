@@ -57,6 +57,7 @@ function initMac() {
         docker \
         eclipse-jee \
         firefox \
+        font-meslolg-nerd-font \
         google-backup-and-sync \
         google-chrome \
         iterm2 \

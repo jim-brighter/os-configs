@@ -70,9 +70,9 @@ function initMac() {
         visual-studio-code \
         vlc
 
-    log "Installing ohmyzsh and powerlevel9k"
+    log "Installing ohmyzsh and powerlevel10k"
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-    git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
 
     log "Setup zsh (and bash) config"
     touch ~/.bash_profile
@@ -85,7 +85,6 @@ function initMac() {
     curl -LO https://raw.githubusercontent.com/jim-brighter/os-configs/master/macos/zprofile.bak
 
     curl -L https://raw.githubusercontent.com/jim-brighter/os-configs/master/macos/vimrc.bak -o ~/.vimrc
-    curl -L https://raw.githubusercontent.com/jim-brighter/os-configs/master/macos/powerlevel9k.sh.bak -o ~/.powerlevel9k.sh
 
     cat bash_profile.bak >> ~/.bash_profile
     cat zshrc.bak >> ~/.zshrc

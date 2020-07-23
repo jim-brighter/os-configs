@@ -20,7 +20,6 @@ git clone git@github.com:jim-brighter/os-configs.git
 Set-Location -Path ~/projects/skyhook
 git clone git@github.com:skyhook-cli/skyhook-cli.git
 git clone git@github.com:skyhook-cli/skyhook-templates.git
-git clone git@github.com:skyhook-cli/sampleapp.git
 
 Set-Location -Path ~/projects/resume-sleuth
 git clone git@github.com:natehand93/resume-sleuth-resume-service.git

@@ -12,7 +12,7 @@ if (!(Test-Path ~/.ssh/id_rsa)) {
 choco install -y --ignorechecksum `
   7zip `
   adobereader `
-  adoptopenjdk8 `
+  adoptopenjdk11 `
   battle.net `
   discord `
   docker-desktop `

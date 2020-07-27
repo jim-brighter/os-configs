@@ -2,15 +2,20 @@
 - Follow Windows installer until you get to the Desktop
 - Install all available Windows updates
 - Install drivers for chipset, storage, sound, graphics, and networking as needed
-    - Install ASUS software suite on desktop
+    - Install ASUS Armoury Crate software suite on desktop
 - Install upgrade to Windows 10 Pro
 - Install any new Windows updates
-- Install Ubuntu, Spotify, Windows Terminal, and Slack from Windows Store
+- Install Ubuntu 20.04, Spotify, Windows Terminal, and Slack from Windows Store
     - Also any other Linux distros (Debian, OpenSUSE)
     - Also a good time to remove bloatware and games
 - Enable WSL and reboot
 ```powershell
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+```
+----
+- Make sure v2 is the default WSL version:
+```powershell
+wsl --set-default-version 2
 ```
 - Make sure OpenSSH service is running and starts automatically
 - Download ssh key from Google Drive and untar it into home directory
@@ -44,7 +49,9 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 ```
 - Reboot
 - Configure installed apps
-- Get the CaskaydiaCove NF font from Nerd Fonts
+- Get some cool fonts from Nerd Fonts:
+  - CaskaydiaCove NF
+  - SauceCodePro NF
 
 ## Fixing the Sleep after 2 Minutes Bug
 - Open the registry and navigate to:

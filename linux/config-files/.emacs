@@ -1,7 +1,0 @@
-(column-number-mode)
-(setq default-tab-width 4)
-(setq-default indent-tabs-mode nil)
-(global-linum-mode 1)
-(show-paren-mode 1)
-(setq show-paren-delay 0)
-(setq scroll-step 1)

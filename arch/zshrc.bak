@@ -1,0 +1,10 @@
+function update() {
+    yay -Syu
+    yay -Sc
+    yay -Rs $(yay -Qtdq)
+    snap refresh
+}
+
+function foreign() {
+    yay -Qm
+}

@@ -40,7 +40,8 @@ libdbusmenu-glib \
 snapd \
 nerd-fonts-source-code-pro \
 zsh \
-nvm
+nvm \
+aws-cli-v2
 
 echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.zshrc
 

@@ -2,7 +2,7 @@ function update() {
     yay -Syu
     yay -Sc
     yay -Rs $(yay -Qtdq)
-    snap refresh
+    sudo snap refresh
 }
 
 function foreign() {

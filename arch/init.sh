@@ -20,6 +20,7 @@ latte-dock \
 sddm \
 sddm-kcm \
 firefox \
+chromium \
 gcc \
 extra-cmake-modules \
 plasma-framework \
@@ -45,8 +46,8 @@ aws-cli-v2
 
 echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.zshrc
 
-systemctl enable --now snapd
-systemctl enable --now snapd.socket
+sudo systemctl enable --now snapd
+sudo systemctl enable --now snapd.socket
 sudo ln -s /var/lib/snapd/snap /snap
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
@@ -55,6 +56,6 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 sudo systemctl enable sddm
 sudo systemctl enable docker
 
-gpasswd -a jim docker
+sudo gpasswd -a jim docker
 
 echo "if everything looks good, reboot now"

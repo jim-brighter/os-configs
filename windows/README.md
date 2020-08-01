@@ -11,9 +11,10 @@
 - Enable WSL and reboot
 ```powershell
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
 ```
 ----
-- Make sure v2 is the default WSL version:
+- Make sure v2 is the default WSL version (will need to install the linux kernel):
 ```powershell
 wsl --set-default-version 2
 ```

@@ -2,6 +2,7 @@
 
 set -ex
 
+# for dual-booting with windows
 sudo timedatectl set-local-rtc 1 --adjust-system-clock
 
 sudo pacman -S git

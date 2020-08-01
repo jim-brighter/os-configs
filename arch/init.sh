@@ -42,8 +42,6 @@ nvm
 # I don't know why this one behaves differently
 yay -S aws-cli-v2
 
-echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.zshrc
-
 sudo systemctl enable sddm
 sudo systemctl enable docker
 sudo systemctl enable snapd
@@ -54,6 +52,8 @@ sudo ln -s /var/lib/snapd/snap /snap
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.zshrc
 
 chsh -s /usr/bin/zsh
 

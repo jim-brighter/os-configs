@@ -10,6 +10,7 @@ fi
 sudo snap install spotify
 sudo snap install slack --classic
 
+source /usr/share/nvm/init-nvm.sh
 nvm install 12
 
 # https://github.com/psifidotos/Latte-Dock/wiki/F.A.Q.#q-can-i-use-my-super-key-to-open-the-app-launcher

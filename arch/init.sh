@@ -37,8 +37,10 @@ libdbusmenu-glib \
 snapd \
 nerd-fonts-complete \
 zsh \
-nvm \
-aws-cli-v2
+nvm
+
+# I don't know why this one behaves differently
+yay -S aws-cli-v2
 
 echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.zshrc
 

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -ex
+
 if [ ! -f ~/.ssh/id_rsa ]; then
     echo "ssh id_rsa file doesn't exist, exiting now!"
     exit 1
@@ -11,15 +13,21 @@ sudo snap install slack --classic
 nvm install 12
 
 # https://github.com/psifidotos/Latte-Dock/wiki/F.A.Q.#q-can-i-use-my-super-key-to-open-the-app-launcher
-kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.lattedock,/Latte,org.kde.LatteDock,activateLauncherMenu"
-qdbus org.kde.KWin /KWin reconfigure
+# kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.lattedock,/Latte,org.kde.LatteDock,activateLauncherMenu"
+# qdbus org.kde.KWin /KWin reconfigure
 
 # https://github.com/psifidotos/applet-window-buttons
-mkdir ~/applets
-cd ~/applets
-git clone https://github.com/psifidotos/applet-window-buttons.git
-cd applet-window-buttons/
-sh install.sh
+# yay -Syu \
+# extra-cmake-modules \
+# plasma-framework \
+# gettext \
+# kdecoration
+
+# mkdir ~/applets
+# cd ~/applets
+# git clone https://github.com/psifidotos/applet-window-buttons.git
+# cd applet-window-buttons/
+# sh install.sh
 
 git config --global user.name "Jim Brighter"
 git config --global user.email "jbrighter92@gmail.com"

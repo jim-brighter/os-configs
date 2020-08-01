@@ -61,7 +61,7 @@
         	"hidden": false,
         	"icon": "C:\\Users\\jimbr\\icons\\arch.png",
         	"name": "Arch Container",
-        	"commandline": "powershell.exe -NoExit -Command \"docker run -it --rm --entrypoint /bin/bash archlinux:latest\"",
+        	"commandline": "powershell.exe -NoExit -Command \"docker run -it --rm archlinux:latest\"",
         	"fontFace": "CaskaydiaCove NF",
         	"fontSize": 10,
         	"useAcrylic": false,

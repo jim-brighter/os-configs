@@ -57,16 +57,16 @@
             "cursorShape": "filledBox"
         },
         {
-        	"guid": "{c65bb780-0918-49b5-9c39-46db9aafc43a}",
-        	"hidden": false,
+            "guid": "{a5a97cb8-8961-5535-816d-772efe0c6a3f}",
+            "hidden": false,
         	"icon": "C:\\Users\\jimbr\\icons\\arch.png",
-        	"name": "Arch Container",
-        	"commandline": "powershell.exe -NoExit -Command \"docker run -it --rm archlinux:latest\"",
+        	"name": "Arch",
+        	"commandline": "wsl -d Arch",
         	"fontFace": "CaskaydiaCove NF",
         	"fontSize": 10,
         	"useAcrylic": false,
         	"acrylicOpacity": 0.9,
-        	"tabTitle": "[Docker] Arch",
+        	"tabTitle": "Arch",
         	"suppressApplicationTitle": true,
         	"cursorShape": "filledBox"
         },

@@ -13,23 +13,6 @@ sudo snap install slack --classic
 source /usr/share/nvm/init-nvm.sh
 nvm install 12
 
-# https://github.com/psifidotos/Latte-Dock/wiki/F.A.Q.#q-can-i-use-my-super-key-to-open-the-app-launcher
-# kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.lattedock,/Latte,org.kde.LatteDock,activateLauncherMenu"
-# qdbus org.kde.KWin /KWin reconfigure
-
-# https://github.com/psifidotos/applet-window-buttons
-# yay -Syu \
-# extra-cmake-modules \
-# plasma-framework \
-# gettext \
-# kdecoration
-
-# mkdir ~/applets
-# cd ~/applets
-# git clone https://github.com/psifidotos/applet-window-buttons.git
-# cd applet-window-buttons/
-# sh install.sh
-
 git config --global user.name "Jim Brighter"
 git config --global user.email "jbrighter92@gmail.com"
 
@@ -54,3 +37,31 @@ git clone git@github.com:natehand93/resume-sleuth-ui.git
 cd ~/projects/skyhook
 git clone git@github.com:skyhook-cli/skyhook-cli.git
 git clone git@github.com:skyhook-cli/skyhook-templates.git
+
+
+read -p "Use latte-dock [y/N]? " latte
+
+if [ "$latte" = "y" ]; then
+	echo "Installing latte-dock + some cool stuff to go with it"
+
+    yay -Syu \
+    latte-dock \
+    extra-cmake-modules \
+    plasma-framework \
+    gettext \
+    kdecoration
+
+    # https://github.com/psifidotos/applet-window-buttons
+    mkdir ~/applets
+    cd ~/applets
+    git clone https://github.com/psifidotos/applet-window-buttons.git
+    cd applet-window-buttons/
+    sh install.sh
+
+    # https://github.com/psifidotos/Latte-Dock/wiki/F.A.Q.#q-can-i-use-my-super-key-to-open-the-app-launcher
+    kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.lattedock,/Latte,org.kde.LatteDock,activateLauncherMenu"
+    qdbus org.kde.KWin /KWin reconfigure
+
+else
+	echo "Skipping latte-dock install"
+fi

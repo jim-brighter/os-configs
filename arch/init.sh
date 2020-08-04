@@ -44,7 +44,6 @@ if [ "$desktop" = "kde" ]; then
     kde-applications \
     sddm \
     sddm-kcm \
-    yay -Syu \
     latte-dock \
     extra-cmake-modules \
     plasma-framework \

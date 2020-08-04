@@ -2,6 +2,8 @@
 
 set -ex
 
+read -p "kde or i3? " desktop
+
 # for dual-booting with windows
 sudo timedatectl set-local-rtc 1 --adjust-system-clock
 
@@ -16,10 +18,6 @@ cd ~
 yay -Syu \
 nvidia \
 xorg \
-plasma \
-kde-applications \
-sddm \
-sddm-kcm \
 firefox \
 chromium \
 gcc \
@@ -33,17 +31,56 @@ code \
 neofetch \
 zip \
 unzip \
-appmenu-gtk-module \
-libdbusmenu-glib \
 snapd \
 nerd-fonts-complete \
 zsh \
-nvm
+nvm \
+aws-cli-v2
 
-# I don't know why this one behaves differently
-yay -S aws-cli-v2
+if [ "$desktop" = "kde" ]; then
 
-sudo systemctl enable sddm
+    yay -S \
+    plasma \
+    kde-applications \
+    sddm \
+    sddm-kcm \
+    yay -Syu \
+    latte-dock \
+    extra-cmake-modules \
+    plasma-framework \
+    gettext \
+    kdecoration \
+    appmenu-gtk-module \
+    libdbusmenu-glib
+
+    sudo systemctl enable sddm
+
+else
+
+    yay -S \
+    lightdm \
+    lightdm-gtk-greeter \
+    i3 \
+    termite \
+    dmenu \
+    feh \
+    openssh \
+    pulseaudio \
+    pulseaudio-alsa \
+    picom
+
+    sudo systemctl enable lightdm
+
+    mkdir -p ~/.config/termite
+    mkdir -p ~/.config/picom
+    mkdir -p ~/.config/i3status
+
+    cp /etc/xdg/termite/config ~/.config/termite/config
+    cp /etc/xdg/picom.conf ~/.config/picom/picom.conf
+    cp /etc/i3status.conf ~/.config/i3status/config
+
+fi
+
 sudo systemctl enable docker
 sudo systemctl enable snapd
 sudo systemctl enable snapd.socket

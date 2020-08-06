@@ -30,6 +30,7 @@ function initMac() {
 
     log "Installing cli tools via homebrew"
     brew install \
+        awscli \
         doctl \
         git \
         openjdk@11 \
@@ -57,11 +58,14 @@ function initMac() {
         docker \
         eclipse-jee \
         firefox \
+        font-caskaydia-cove-nerd-font \
         font-meslolg-nerd-font \
+        font-saucecodepro-nerd-font \
         google-backup-and-sync \
         google-chrome \
         iterm2 \
         nordvpn \
+        postman \
         powershell \
         qbittorrent \
         slack \
@@ -110,6 +114,8 @@ function initMac() {
     git clone git@github.com:jim-brighter/jim-brighter.github.io.git
     git clone git@github.com:jim-brighter/ops-secrets.git
     git clone git@github.com:jim-brighter/os-configs.git
+    git clone git@github.com:jim-brighter/pi-dashboard.git
+    git clone git@github.com:jim-brighter/pihole.git
 
     cd ~/projects/resume-sleuth
     git clone git@github.com:natehand93/resume-sleuth-resume-service.git

@@ -2,6 +2,7 @@
 - Follow MacOS Installer until you get to the Desktop
 - Install all available MacOS updates
 - Install BetterSnapTool (optional) and any updates from the App Store
+- Install NordPass from its website since it's not in homebrew
 - Download ssh key from Google Drive and untar it into home directory
   - `chmod` the file appropriately
 - Download the setup script from this folder
@@ -15,7 +16,7 @@
   ```
 - Copy `SF Mono` font files out of Terminal.app into Font Book
 - Copy `SF Mono Patched` font files out of this repo into Font Book
-- For Powerlevel10k, set theme to `powerlevel10k/powerlevel10k` and then set fonts to either `MesloLGM Nerd Font Mono` or `SFMono NF`
+- For Powerlevel10k, set theme to `powerlevel10k/powerlevel10k` and then set fonts to either `MesloLGM Nerd Font Mono` or `SFMono NF` or `CaskaydiaCove Nerd Font Mono`
 
 ## Patch SF Mono with Nerd Fonts:
 - Clone the nerd-fonts github repo

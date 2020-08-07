@@ -1,3 +1,7 @@
+alias l="ls -lh"
+alias la="ls -alh"
+alias l1="ls -1"
+
 function update() {
     yay -Syu
     yay -Sc

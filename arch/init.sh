@@ -69,7 +69,8 @@ else
     picom \
     noto-fonts-cjk \
     noto-fonts-emoji \
-    lxappearance
+    lxappearance \
+    htop
 
     sudo systemctl enable lightdm
 

@@ -68,7 +68,8 @@ else
     pulseaudio-alsa \
     picom \
     noto-fonts-cjk \
-    noto-fonts-emoji
+    noto-fonts-emoji \
+    lxappearance
 
     sudo systemctl enable lightdm
 

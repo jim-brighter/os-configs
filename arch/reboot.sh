@@ -8,6 +8,7 @@ if [ ! -f ~/.ssh/id_rsa ]; then
 fi
 
 sudo snap install spotify
+sudo snap install nordpass
 sudo snap install slack --classic
 
 source /usr/share/nvm/init-nvm.sh

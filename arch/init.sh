@@ -66,7 +66,9 @@ else
     openssh \
     pulseaudio \
     pulseaudio-alsa \
-    picom
+    picom \
+    noto-fonts-cjk \
+    noto-fonts-emoji
 
     sudo systemctl enable lightdm
 

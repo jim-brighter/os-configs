@@ -35,7 +35,12 @@ snapd \
 nerd-fonts-complete \
 zsh \
 nvm \
-aws-cli-v2
+aws-cli-v2 \
+openssh \
+noto-fonts \
+noto-fonts-cjk \
+noto-fonts-emoji \
+htop
 
 if [ "$desktop" = "kde" ]; then
 
@@ -63,14 +68,10 @@ else
     termite \
     dmenu \
     feh \
-    openssh \
     pulseaudio \
     pulseaudio-alsa \
     picom \
-    noto-fonts-cjk \
-    noto-fonts-emoji \
-    lxappearance \
-    htop
+    lxappearance
 
     sudo systemctl enable lightdm
 

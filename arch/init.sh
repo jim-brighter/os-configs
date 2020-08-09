@@ -40,7 +40,9 @@ openssh \
 noto-fonts \
 noto-fonts-cjk \
 noto-fonts-emoji \
-htop
+htop \
+pulseaudio \
+pulseaudio-alsa
 
 if [ "$desktop" = "kde" ]; then
 
@@ -68,8 +70,6 @@ else
     termite \
     dmenu \
     feh \
-    pulseaudio \
-    pulseaudio-alsa \
     picom \
     lxappearance
 

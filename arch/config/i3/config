@@ -108,13 +108,13 @@ bindsym $mod+a focus parent
 set $ws1 "1:  "
 set $ws2 "2: ﬏ "
 set $ws3 "3:  "
-set $ws4 "4"
-set $ws5 "5"
+set $ws4 "4:  "
+set $ws5 "5:  "
 set $ws6 "6:  "
-set $ws7 "7"
-set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10: "
+set $ws7 "7:  "
+set $ws8 "8:  "
+set $ws9 "9: 聆 "
+set $ws10 "10:  "
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -223,6 +223,7 @@ exec --no-startup-id ~/.fehbg &
 for_window [class="Spotify"] move to workspace $ws10
 assign [class="code-oss"] $ws2
 assign [class="Eclipse"] $ws3
+assign [class="Slack" ] $ws9
 
 # Key Bindings
 bindsym Mod1+Tab workspace next

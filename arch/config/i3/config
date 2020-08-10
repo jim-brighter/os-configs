@@ -235,4 +235,3 @@ gaps inner 10
 # Always float these
 for_window [class="Lxappearance"] floating enable
 for_window [class="NordPass"] floating enable
-for_window [class="Slack"] floating enable

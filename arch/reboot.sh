@@ -31,6 +31,9 @@ git clone git@github.com:jim-brighter/os-configs.git
 git clone git@github.com:jim-brighter/pi-dashboard.git
 git clone git@github.com:jim-brighter/pihole.git
 
+cp os-configs/arch/vimrc.bak ~/.vimrc
+cat os-configs/arch/zshrc.bak >> ~/.zshrc
+
 if [ -f ~/.config/picom/picom.conf ]; then
     cp os-configs/arch/config/i3/config ~/.config/i3/config
     cp os-configs/arch/config/i3status/config ~/.config/i3status/config

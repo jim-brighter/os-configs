@@ -42,7 +42,8 @@ noto-fonts-cjk \
 noto-fonts-emoji \
 htop \
 pulseaudio \
-pulseaudio-alsa
+pulseaudio-alsa \
+slack-desktop
 
 if [ "$desktop" = "kde" ]; then
 

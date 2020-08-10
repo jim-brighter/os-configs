@@ -9,7 +9,6 @@ fi
 
 sudo snap install spotify
 sudo snap install nordpass
-sudo snap install slack --classic
 
 source /usr/share/nvm/init-nvm.sh
 nvm install 12

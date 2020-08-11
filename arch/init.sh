@@ -31,7 +31,6 @@ code \
 neofetch \
 zip \
 unzip \
-snapd \
 nerd-fonts-complete \
 zsh \
 nvm \
@@ -43,7 +42,7 @@ noto-fonts-emoji \
 htop \
 pulseaudio \
 pulseaudio-alsa \
-slack-desktop
+flatpak
 
 if [ "$desktop" = "kde" ]; then
 
@@ -87,11 +86,8 @@ else
 fi
 
 sudo systemctl enable docker
-sudo systemctl enable snapd
-sudo systemctl enable snapd.socket
 
 sudo gpasswd -a jim docker
-sudo ln -s /var/lib/snapd/snap /snap
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k

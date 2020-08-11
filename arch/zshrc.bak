@@ -7,7 +7,7 @@ function update() {
     yay -Syu
     yay -Sc
     yay -Rs $(yay -Qtdq)
-    sudo snap refresh
+    flatpak update
 }
 
 function foreign() {

@@ -7,8 +7,9 @@ if [ ! -f ~/.ssh/id_rsa ]; then
     exit 1
 fi
 
-sudo snap install spotify
-sudo snap install nordpass
+flatpak install -y flathub com.spotify.Client
+flatpak install -y flathub com.slack.Slack
+flatpak install -y flathub com.nordpass.NordPass
 
 source /usr/share/nvm/init-nvm.sh
 nvm install 12

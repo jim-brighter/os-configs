@@ -32,12 +32,16 @@ git clone git@github.com:jim-brighter/pi-dashboard.git
 git clone git@github.com:jim-brighter/pihole.git
 
 cp os-configs/arch/vimrc.bak ~/.vimrc
+cp os-configs/arch/zshenv.bak ~/.zshenv
 cat os-configs/arch/zshrc.bak >> ~/.zshrc
 
 if [ -f ~/.config/picom/picom.conf ]; then
     cp os-configs/arch/config/i3/config ~/.config/i3/config
     cp os-configs/arch/config/i3status/config ~/.config/i3status/config
     cp os-configs/arch/config/termite/config ~/.config/termite/config
+
+    mkdir -p ~/.local/bin
+    cp os-configs/arch/ctl ~/.local/bin
 fi
 
 cd ~/projects/resume-sleuth

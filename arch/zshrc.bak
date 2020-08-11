@@ -1,4 +1,6 @@
 
+source /usr/share/nvm/init-nvm.sh
+
 alias l="ls -lh"
 alias la="ls -alh"
 alias l1="ls -1"

@@ -21,6 +21,7 @@ choco install -y --ignorechecksum `
   epicgameslauncher `
   Firefox `
   git `
+  golang `
   google-backup-and-sync `
   GoogleChrome `
   gradle `

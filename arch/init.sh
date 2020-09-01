@@ -42,7 +42,8 @@ noto-fonts-emoji \
 htop \
 pulseaudio \
 pulseaudio-alsa \
-flatpak
+flatpak \
+go
 
 if [ "$desktop" = "kde" ]; then
 

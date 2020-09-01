@@ -33,6 +33,7 @@ function initMac() {
         awscli \
         doctl \
         git \
+        go \
         openjdk@11 \
         gradle \
         lolcat \

@@ -36,6 +36,7 @@ function initMac() {
         go \
         openjdk@11 \
         gradle \
+        htop \
         lolcat \
         neofetch \
         nvm \
@@ -49,10 +50,10 @@ function initMac() {
 
     log "Installing nodejs and awscli"
     nvm install 12
-    pip3 install awscli --upgrade
 
     log "Installing homebrew casks"
     brew tap AdoptOpenJDK/openjdk
+    brew tap homebrew/cask-fonts
     brew cask install \
         adoptopenjdk11 \
         discord \

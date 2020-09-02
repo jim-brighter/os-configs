@@ -1,7 +1,7 @@
 ## MacOS Setup Instructions
 - Follow MacOS Installer until you get to the Desktop
 - Install all available MacOS updates
-- Install BetterSnapTool (optional) and any updates from the App Store
+- Install BetterSnapTool and maybe Microsoft Office/OneDrive and any updates from the App Store
 - Install NordPass from its website since it's not in homebrew
 - Download ssh key from Google Drive and untar it into home directory
   - `chmod` the file appropriately

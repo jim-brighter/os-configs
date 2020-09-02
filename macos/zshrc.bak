@@ -6,6 +6,5 @@ alias la="ls -ahl"
 alias l1="ls -1"
 alias ..="cd .."
 
-function update() {
-    brew update && brew upgrade && brew cask upgrade
-}
+alias update="brew update && brew upgrade && brew cask upgrade && brew cleanup"
+alias gitClean="git branch -vv | grep \": gone\" | awk '{print $1}' | xargs git branch -D"

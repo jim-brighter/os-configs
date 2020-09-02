@@ -10,20 +10,18 @@ Mostly just follow the Arch Install Guide: https://wiki.archlinux.org/index.php/
 After rebooting:
 ```bash
 curl -LO https://raw.githubusercontent.com/jim-brighter/os-configs/master/arch/init.sh
-chmod +x init.sh
+curl -LO https://raw.githubusercontent.com/jim-brighter/os-configs/master/arch/reboot.sh
+curl -LO https://raw.githubusercontent.com/jim-brighter/os-configs/master/arch/kde-extras.sh
+chmod +x *.sh
 ./init.sh
 ```
 
 After rebooting again:
 ```bash
-curl -LO https://raw.githubusercontent.com/jim-brighter/os-configs/master/arch/reboot.sh
-chmod +x reboot.sh
 ./reboot.sh
 ```
 
 If running kde, then also:
 ```bash
-curl -LO https://raw.githubusercontent.com/jim-brighter/os-configs/master/arch/kde-extras.sh
-chmod +x kde-extras.sh
 ./kde-extras.sh
 ```

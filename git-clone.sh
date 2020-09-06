@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+read -p "token? " TOKEN
+
 curl --location --request GET 'https://api.github.com/user/repos' \
 --header 'Accept: application/vnd.github.v3+json' \
 --header "Authorization: token $TOKEN" \

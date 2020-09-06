@@ -17,41 +17,21 @@ nvm install 12
 git config --global user.name "Jim Brighter"
 git config --global user.email "jbrighter92@gmail.com"
 
-mkdir -p ~/projects/personal
-mkdir -p ~/projects/resume-sleuth
-mkdir -p ~/projects/skyhook
+curl -LO https://raw.githubusercontent.com/jim-brighter/os-configs/master/git-clone.sh
+bash ./git-clone.sh
 
-cd ~/projects/personal
-git clone git@github.com:jim-brighter/planner.git
-git clone git@github.com:jim-brighter/photodump.git
-git clone git@github.com:jim-brighter/jenkins.git
-git clone git@github.com:jim-brighter/jim-brighter.github.io.git
-git clone git@github.com:jim-brighter/ops-secrets.git
-git clone git@github.com:jim-brighter/os-configs.git
-git clone git@github.com:jim-brighter/pi-dashboard.git
-git clone git@github.com:jim-brighter/pihole.git
-
-cp os-configs/arch/vimrc.bak ~/.vimrc
-cp os-configs/arch/zshenv.bak ~/.zshenv
-cat os-configs/arch/zshrc.bak >> ~/.zshrc
+cp ~/github/jim-brighter/os-configs/arch/vimrc.bak ~/.vimrc
+cp ~/github/jim-brighter/os-configs/arch/zshenv.bak ~/.zshenv
+cat ~/github/jim-brighter/os-configs/arch/zshrc.bak >> ~/.zshrc
 
 if [ -f ~/.config/picom/picom.conf ]; then
-    cp os-configs/arch/config/i3/config ~/.config/i3/config
-    cp os-configs/arch/config/i3status/config ~/.config/i3status/config
-    cp os-configs/arch/config/termite/config ~/.config/termite/config
+    cp ~/github/jim-brighter/os-configs/arch/config/i3/config ~/.config/i3/config
+    cp ~/github/jim-brighter/os-configs/arch/config/i3status/config ~/.config/i3status/config
+    cp ~/github/jim-brighter/os-configs/arch/config/termite/config ~/.config/termite/config
 
     mkdir -p ~/.local/bin
-    cp os-configs/arch/ctl ~/.local/bin
+    cp ~/github/jim-brighter/os-configs/arch/ctl ~/.local/bin
 fi
-
-cd ~/projects/resume-sleuth
-git clone git@github.com:natehand93/resume-sleuth-resume-service.git
-git clone git@github.com:natehand93/resume-sleuth-ui.git
-
-cd ~/projects/skyhook
-git clone git@github.com:skyhook-cli/skyhook-cli.git
-git clone git@github.com:skyhook-cli/skyhook-templates.git
-git clone git@github.com:skyhook-cli/skyhook-cli-go.git
 
 cd
 neofetch

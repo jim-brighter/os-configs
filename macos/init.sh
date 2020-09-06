@@ -34,22 +34,21 @@ function initMac() {
         doctl \
         git \
         go \
-        openjdk@11 \
         gradle \
         htop \
-        lolcat \
         jq \
         neofetch \
         nvm \
+        openjdk@11 \
         python
 
     log "Setting up NVM config in this shell"
-    mkdir ~/.nvm
+    mkdir -p ~/.nvm
     export NVM_DIR="$HOME/.nvm"
     [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh"
     [ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm"
 
-    log "Installing nodejs and awscli"
+    log "Installing nodejs"
     nvm install 12
 
     log "Installing homebrew casks"
@@ -105,33 +104,13 @@ function initMac() {
     git config --global user.name "Jim Brighter"
     git config --global user.email "jbrighter92@gmail.com"
 
-    log "Creating directories and cloning repos"
-    mkdir -p ~/projects/personal
-    mkdir -p ~/projects/resume-sleuth
-    mkdir -p ~/projects/skyhook
-
-    cd ~/projects/personal
-    git clone git@github.com:jim-brighter/planner.git
-    git clone git@github.com:jim-brighter/photodump.git
-    git clone git@github.com:jim-brighter/jenkins.git
-    git clone git@github.com:jim-brighter/jim-brighter.github.io.git
-    git clone git@github.com:jim-brighter/ops-secrets.git
-    git clone git@github.com:jim-brighter/os-configs.git
-    git clone git@github.com:jim-brighter/pi-dashboard.git
-    git clone git@github.com:jim-brighter/pihole.git
-
-    cd ~/projects/resume-sleuth
-    git clone git@github.com:natehand93/resume-sleuth-resume-service.git
-    git clone git@github.com:natehand93/resume-sleuth-ui.git
-
-    cd ~/projects/skyhook
-    git clone git@github.com:skyhook-cli/skyhook-cli.git
-    git clone git@github.com:skyhook-cli/skyhook-templates.git
-    git clone git@github.com:skyhook-cli/skyhook-cli-go.git
+    log "Cloning git repos"
+    curl -LO https://raw.githubusercontent.com/jim-brighter/os-configs/master/git-clone.sh
+    bash ./git-clone.sh
 
     cd
 
-    clear && neofetch | lolcat
+    clear && neofetch
 
     echo
     log "Done!"

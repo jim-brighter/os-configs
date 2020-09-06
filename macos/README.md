@@ -16,7 +16,7 @@
   ```
 - Copy `SF Mono` font files out of Terminal.app into Font Book
 - Copy `SF Mono Patched` font files out of this repo into Font Book
-- For Powerlevel10k, set theme to `powerlevel10k/powerlevel10k` and then set fonts to either `MesloLGM Nerd Font Mono` or `SFMono NF` or `CaskaydiaCove Nerd Font Mono`
+- For Powerlevel10k, set theme to `powerlevel10k/powerlevel10k` and then set terminal fonts to either `MesloLGM Nerd Font Mono` or `SFMono NF` or `CaskaydiaCove Nerd Font Mono`
 
 ## Patch SF Mono with Nerd Fonts:
 - Clone the nerd-fonts github repo

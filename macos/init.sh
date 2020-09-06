@@ -38,6 +38,7 @@ function initMac() {
         gradle \
         htop \
         lolcat \
+        jq \
         neofetch \
         nvm \
         python

@@ -43,7 +43,8 @@ htop \
 pulseaudio \
 pulseaudio-alsa \
 flatpak \
-go
+go \
+jq
 
 if [ "$desktop" = "kde" ]; then
 

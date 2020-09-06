@@ -2,6 +2,9 @@
 
 read -p "token? " TOKEN
 
+mkdir -p ~/github
+cd ~/github
+
 curl --location --request GET 'https://api.github.com/user/repos' \
 --header 'Accept: application/vnd.github.v3+json' \
 --header "Authorization: token $TOKEN" \

@@ -3,6 +3,7 @@
 - Install all available Windows updates
 - Install drivers for chipset, storage, sound, graphics, and networking as needed
     - Install ASUS Armoury Crate software suite on desktop
+    - Install NZXT CAM software on desktop
 - Install upgrade to Windows 10 Pro
 - Install any new Windows updates
 - Install Ubuntu 20.04, Spotify, Windows Terminal, and Slack from Windows Store

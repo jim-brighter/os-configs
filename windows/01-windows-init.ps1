@@ -15,6 +15,7 @@ choco install -y --ignorechecksum `
   adoptopenjdk11 `
   awscli `
   battle.net `
+  cpu-z `
   discord `
   docker-desktop `
   eclipse `

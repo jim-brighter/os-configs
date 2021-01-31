@@ -1,13 +1,11 @@
-
-### USER ADDITIONS
-
 alias l="ls -lh"
 alias la="ls -ahl"
 alias l1="ls -1"
 alias ..="cd .."
 
-alias update="brew update && brew upgrade && brew cleanup"
-alias gitClean="git branch -vv | grep \": gone\" | awk '{print $1}' | xargs git branch -D"
+alias update="sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove"
+
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 
 function clone() {
   prefix=$(echo $1 | cut -c1-3)

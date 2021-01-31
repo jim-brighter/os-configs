@@ -1,13 +1,7 @@
-
-### USER ADDITIONS
-
-alias l="ls -lh"
-alias la="ls -ahl"
+alias l="ls -l"
+alias la="ls -al"
 alias l1="ls -1"
 alias ..="cd .."
-
-alias update="brew update && brew upgrade && brew cleanup"
-alias gitClean="git branch -vv | grep \": gone\" | awk '{print $1}' | xargs git branch -D"
 
 function clone() {
   prefix=$(echo $1 | cut -c1-3)

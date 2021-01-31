@@ -2,16 +2,3 @@ alias l="ls -l"
 alias la="ls -al"
 alias l1="ls -1"
 alias ..="cd .."
-
-function clone() {
-  prefix=$(echo $1 | cut -c1-3)
-  if [[ "$prefix" == "git" ]]; then
-    owner=$(echo $1 | cut -d':' -f 2 | cut -d'/' -f 1)
-  else
-    owner=$(echo $1 | cut -d'/' -f 4)
-  fi
-
-  mkdir -p $owner && cd $owner
-
-  git clone $1
-}

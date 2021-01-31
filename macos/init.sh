@@ -100,6 +100,9 @@ function initMac() {
 
     rm bash_profile.bak zshrc.bak zshenv.bak zprofile.bak
 
+    curl -L https://raw.githubusercontent.com/jim-brighter/os-configs/master/clone -o ~/clone
+    chmod +x ~/clone
+
     log "Configuring git"
     git config --global user.name "Jim Brighter"
     git config --global user.email "jbrighter92@gmail.com"

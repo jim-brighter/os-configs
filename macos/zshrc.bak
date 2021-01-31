@@ -8,16 +8,3 @@ alias ..="cd .."
 
 alias update="brew update && brew upgrade && brew cleanup"
 alias gitClean="git branch -vv | grep \": gone\" | awk '{print $1}' | xargs git branch -D"
-
-function clone() {
-  prefix=$(echo $1 | cut -c1-3)
-  if [[ "$prefix" == "git" ]]; then
-    owner=$(echo $1 | cut -d':' -f 2 | cut -d'/' -f 1)
-  else
-    owner=$(echo $1 | cut -d'/' -f 4)
-  fi
-
-  mkdir -p $owner && cd $owner
-
-  git clone $1
-}

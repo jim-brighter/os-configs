@@ -1,14 +1,12 @@
 #!/usr/bin/env bash
 
-function clone() {
-  prefix=$(echo $1 | cut -c1-3)
-  if [[ "$prefix" == "git" ]]; then
-    owner=$(echo $1 | cut -d':' -f 2 | cut -d'/' -f 1)
-  else
-    owner=$(echo $1 | cut -d'/' -f 4)
-  fi
+prefix=$(echo $1 | cut -c1-3)
+if [[ "$prefix" == "git" ]]; then
+  owner=$(echo $1 | cut -d':' -f 2 | cut -d'/' -f 1)
+else
+  owner=$(echo $1 | cut -d'/' -f 4)
+fi
 
-  mkdir -p $owner && cd $owner
+mkdir -p $owner && cd $owner
 
-  git clone $1
-}
+git clone $1

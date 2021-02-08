@@ -11,7 +11,7 @@
 - Download the setup script from this folder
 ```powershell
 Invoke-RestMethod `
-  -Uri https://raw.githubusercontent.com/jim-brighter/os-configs/master/windows/01-windows-init.ps1 `
+  -Uri https://raw.githubusercontent.com/jim-brighter/os-configs/master/windows/windows-init.ps1 `
   -OutFile ~/Downloads/windows-init.ps1
 ```
 - Make sure Powershell is configured to enable running scripts (in an admin powershell window)

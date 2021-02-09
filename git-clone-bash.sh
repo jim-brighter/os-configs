@@ -26,7 +26,7 @@ function clone() {
     prefix=$(echo $1 | cut -c1-3)
     if [[ "$prefix" == "git" ]]; then
         owner=$(echo $1 | cut -d':' -f 2 | cut -d'/' -f 1)
-	infostellar=0
+	    nfostellar=0
     else
         owner=$(echo $1 | cut -d'/' -f 4)
         repo=$(echo $1 | cut -d'/' -f 5)

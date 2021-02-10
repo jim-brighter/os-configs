@@ -47,7 +47,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 .\02-windows-setup.ps1
 ```
 - Reboot
-- Install Ubuntu 20.04, Spotify, Windows Terminal, and Slack from Windows Store
+- Install Ubuntu 20.04, Spotify, Windows Terminal, Netflix, Hulu, and Slack from Windows Store
     - Also any other Linux distros (Debian, OpenSUSE)
     - Also a good time to remove bloatware and games
 - Configure installed apps

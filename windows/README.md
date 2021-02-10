@@ -46,6 +46,11 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 ```powershell
 .\02-windows-setup.ps1
 ```
+- Open Git Bash and execute the below commands to clone all repos
+```bash
+source ~/git-clone.sh
+cloneAllRepos [https]
+```
 - Reboot
 - Install Ubuntu 20.04, Spotify, Windows Terminal, Netflix, Hulu, and Slack from Windows Store
     - Also any other Linux distros (Debian, OpenSUSE)

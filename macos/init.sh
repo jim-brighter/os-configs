@@ -37,7 +37,6 @@ function initMac() {
         gradle \
         htop \
         jq \
-        neofetch \
         nvm \
         openjdk@11 \
         python
@@ -113,7 +112,7 @@ function initMac() {
 
     cd
 
-    clear && neofetch
+    clear
 
     echo
     log "Done!"

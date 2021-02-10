@@ -21,7 +21,6 @@ jdk11-openjdk \
 gradle \
 eclipse-common \
 eclipse-jee \
-neofetch \
 zip \
 unzip \
 nerd-fonts-complete \
@@ -42,17 +41,19 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 chsh -s /usr/bin/zsh
 
 source /usr/share/nvm/init-nvm.sh
-nvm install 12
+nvm install 14
 
 git config --global user.name "Jim Brighter"
 git config --global user.email "jbrighter92@gmail.com"
 
 curl -LO https://raw.githubusercontent.com/jim-brighter/os-configs/master/git-clone.sh
-bash ./git-clone.sh
+source ./git-clone.sh
+cloneAllRepos
 
-cp ~/github/jim-brighter/os-configs/arch/vimrc.bak ~/.vimrc
-cp ~/github/jim-brighter/os-configs/arch/zshenv.bak ~/.zshenv
-cat ~/github/jim-brighter/os-configs/arch/zshrc.bak >> ~/.zshrc
+cp ~/github/jim-brighter/os-configs/windows/wsl/vimrc.bak ~/.vimrc
+cp ~/github/jim-brighter/os-configs/windows/wsl/zshenv.bak ~/.zshenv
+cat ~/github/jim-brighter/os-configs/windows/wsl/zshrc.bak >> ~/.zshrc
+cp ~/github/jim-brighter/os-configs/git-clone-zsh.sh ~/git-clone-zsh.sh
 
 cd
-neofetch
+clear

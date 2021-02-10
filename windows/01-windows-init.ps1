@@ -1,9 +1,6 @@
 # Install Chocolatey
 Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
-# Install Scoop
-iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
-
 if (!(Test-Path ~/.ssh/id_rsa)) {
   Write-Warning "ssh id_rsa file not found, exiting..."
   exit
@@ -18,6 +15,7 @@ choco install -y --ignorechecksum `
   cpu-z `
   discord `
   docker-desktop `
+  doctl `
   eclipse `
   epicgameslauncher `
   Firefox `
@@ -40,5 +38,3 @@ choco install -y --ignorechecksum `
   sublimetext3 `
   vlc `
   vscode
-
-scoop install git neofetch doctl

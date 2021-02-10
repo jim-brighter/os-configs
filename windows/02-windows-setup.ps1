@@ -4,12 +4,6 @@ git config --global core.autocrlf true
 
 Invoke-RestMethod `
   -Uri https://raw.githubusercontent.com/jim-brighter/os-configs/master/git-clone.sh `
-  -OutFile ~/Downloads/git-clone.sh
+  -OutFile ~/git-clone.sh
 
-git-bash.exe -c "bash ~/Downloads/git-clone.sh"
-
-Invoke-RestMethod `
-  -Uri https://raw.githubusercontent.com/jim-brighter/os-configs/master/clone `
-  -OutFile ~/clone
-
-neofetch
+git-bash.exe -c "bash ~/git-clone.sh"

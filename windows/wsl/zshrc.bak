@@ -1,9 +1,11 @@
 
-source /usr/share/nvm/init-nvm.sh
-
 alias l="ls -lh"
-alias la="ls -alh"
+alias la="ls -ahl"
 alias l1="ls -1"
+alias ..="cd .."
+
+source /usr/share/nvm/init-nvm.sh
+source ~/git-clone-zsh.sh
 
 function update() {
     yay -Syu

@@ -19,7 +19,6 @@ yay -Syu \
 gcc \
 jdk11-openjdk \
 gradle \
-eclipse-common \
 eclipse-jee \
 zip \
 unzip \

@@ -53,7 +53,6 @@ cloneAllRepos
 cp ~/github/jim-brighter/os-configs/windows/wsl/vimrc.bak ~/.vimrc
 cp ~/github/jim-brighter/os-configs/windows/wsl/zshenv.bak ~/.zshenv
 cat ~/github/jim-brighter/os-configs/windows/wsl/zshrc.bak >> ~/.zshrc
-cp ~/github/jim-brighter/os-configs/git-clone-zsh.sh ~/git-clone-zsh.sh
 
 cd
 clear

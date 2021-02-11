@@ -2,7 +2,7 @@
 - from Ubuntu (or another WSL distro):
 ```bash
 mkdir tmp && cd tmp
-curl -LO http://mirror.umd.edu/archlinux/iso/2020.08.01/archlinux-bootstrap-2020.08.01-x86_64.tar.gz
+curl -LO http://mirror.umd.edu/archlinux/iso/latest/archlinux-bootstrap-2021.02.01-x86_64.tar.gz
 sudo tar -xzf archlinux-bootstrap-2020.08.01-x86_64.tar.gz
 cd root.x86_64
 sudo tar -czf ArchWSL.tar.gz .

@@ -7,4 +7,9 @@ alias l1="ls -1"
 alias ..="cd .."
 
 alias update="brew update && brew upgrade && brew cleanup"
-alias gitClean="git branch -vv | grep \": gone\" | awk '{print $1}' | xargs git branch -D"
+
+function gitClean() {
+    git branch -vv | grep ': gone' | awk '{print $1}' | xargs git branch -D
+}
+
+source ~/git-clone.sh

@@ -6,9 +6,6 @@
     - Install NZXT CAM software on desktop
 - Install upgrade to Windows 10 Pro
 - Install any new Windows updates
-- Install Ubuntu 20.04, Spotify, Windows Terminal, and Slack from Windows Store
-    - Also any other Linux distros (Debian, OpenSUSE)
-    - Also a good time to remove bloatware and games
 - Enable WSL and reboot
 ```powershell
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
@@ -49,7 +46,15 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 ```powershell
 .\02-windows-setup.ps1
 ```
+- Open Git Bash and execute the below commands to clone all repos
+```bash
+source ~/git-clone.sh
+cloneAllRepos [https]
+```
 - Reboot
+- Install Ubuntu 20.04, Spotify, Windows Terminal, Netflix, Hulu, and Slack from Windows Store
+    - Also any other Linux distros (Debian, OpenSUSE)
+    - Also a good time to remove bloatware and games
 - Configure installed apps
 - Get some cool fonts from Nerd Fonts, or the Consolas Patched from this repo
 

@@ -5,7 +5,7 @@ alias l1="ls -1"
 alias ..="cd .."
 
 source /usr/share/nvm/init-nvm.sh
-source ~/git-clone-zsh.sh
+source ~/git-clone.sh
 
 function update() {
     yay -Syu

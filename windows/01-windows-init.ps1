@@ -25,8 +25,11 @@ choco install -y --ignorechecksum `
   GoogleChrome `
   gradle `
   hwmonitor `
+  intellijidea-community `
   jq `
+  kubernetes-helm `
   nodejs-lts `
+  nordpass `
   nordvpn `
   origin `
   postman `

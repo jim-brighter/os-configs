@@ -59,14 +59,6 @@
                 "suppressApplicationTitle": true
             },
             {
-                "guid": "{a5a97cb8-8961-5535-816d-772efe0c6a3f}",
-                "name": "Arch",
-                "commandline": "wsl -d Arch",
-                "icon": "C:\\Users\\jimbr\\icons\\arch-icon.png",
-                "tabTitle": "Arch",
-                "suppressApplicationTitle": true
-            },
-            {
                 // Make changes here to the cmd.exe profile.
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "name": "Command Prompt",

@@ -71,8 +71,10 @@
             {
                 "commandline": "wsl -d Ubuntu-20.04",
                 "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
-                "icon": "C:\\Users\\jimbr\\icons\\ubuntu-icon.png",
+                "hidden": false,
+                "icon": "C:\\Users\\jimbr\\OneDrive\\Pictures\\ubuntu.png",
                 "name": "Ubuntu-20.04",
+                "source": "Windows.Terminal.Wsl",
                 "suppressApplicationTitle": true,
                 "tabTitle": "Ubuntu 20.04"
             },

@@ -2,9 +2,13 @@
 - Follow Windows installer until you get to the Desktop
 - Install all available Windows updates
 - Install drivers for chipset, storage, sound, graphics, and networking as needed
-    - Install ASUS Armoury Crate software suite on desktop
-    - Install NZXT CAM software on desktop
-    - Install Logitech G Suite on desktop
+    - Desktop:
+        - ASUS Armoury Crate software suite
+        - NZXT CAM software
+        - Logitech G Suite
+        - Ryzen Master
+        - Brother Drivers
+        - Oculus
 - Install upgrade to Windows 10 Pro
 - Install any new Windows updates
 - Enable WSL and reboot
@@ -53,7 +57,7 @@ source ~/git-clone.sh
 cloneAllRepos [https]
 ```
 - Reboot
-- Install Ubuntu 20.04, Spotify, Windows Terminal, Netflix, Hulu, and Slack from Windows Store
+- Install Ubuntu 20.04, Spotify, Windows Terminal, Netflix, Hulu, Amazon Prime Video, and Slack from Windows Store
     - Also any other Linux distros (Debian, OpenSUSE)
     - Also a good time to remove bloatware and games
 - Configure installed apps

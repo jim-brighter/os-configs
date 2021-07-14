@@ -3,13 +3,13 @@
     // Add custom actions and keybindings to this array.
     // To unbind a key combination from your defaults.json, set the command to "unbound".
     // To learn more about actions and keybindings, visit https://aka.ms/terminal-keybindings
-    "actions": 
+    "actions":
     [
         // Copy and paste are bound to Ctrl+Shift+C and Ctrl+Shift+V in your defaults.json.
         // These two lines additionally bind them to Ctrl+C and Ctrl+V.
         // To learn more about selection, visit https://aka.ms/terminal-selection
         {
-            "command": 
+            "command":
             {
                 "action": "copy",
                 "singleLine": false
@@ -30,7 +30,7 @@
         // - "splitMode": "duplicate" makes the new pane use the focused pane's profile.
         // To learn more about panes, visit https://aka.ms/terminal-panes
         {
-            "command": 
+            "command":
             {
                 "action": "splitPane",
                 "split": "auto",
@@ -44,15 +44,15 @@
     "defaultProfile": "{417d997b-e111-4fe9-99d9-c8b2ddc19f5b}",
     "initialCols": 150,
     "initialRows": 40,
-    "profiles": 
+    "profiles":
     {
-        "defaults": 
+        "defaults":
         {
             "cursorShape": "filledBox",
             "fontFace": "Cascadia Code",
             "fontSize": 10
         },
-        "list": 
+        "list":
         [
             {
                 "commandline": "C:\\Program Files\\Git\\bin\\bash.exe",
@@ -64,11 +64,13 @@
                 "tabTitle": "Git Bash"
             },
             {
+                "colorScheme": "Campbell Powershell",
                 "commandline": "powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "name": "Windows PowerShell"
             },
             {
+                "colorScheme": "Ubuntu",
                 "commandline": "wsl -d Ubuntu-20.04",
                 "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
                 "hidden": false,
@@ -92,7 +94,7 @@
             }
         ]
     },
-    "schemes": 
+    "schemes":
     [
         {
             "background": "#0C0C0C",
@@ -277,6 +279,29 @@
             "selectionBackground": "#FFFFFF",
             "white": "#D3D7CF",
             "yellow": "#C4A000"
+        },
+        {
+            "background": "#2C001E",
+            "black": "#0C0C0C",
+            "blue": "#0037DA",
+            "brightBlack": "#767676",
+            "brightBlue": "#3B78FF",
+            "brightCyan": "#61D6D6",
+            "brightGreen": "#16C60C",
+            "brightPurple": "#B4009E",
+            "brightRed": "#E74856",
+            "brightWhite": "#F2F2F2",
+            "brightYellow": "#F9F1A5",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#3A96DD",
+            "foreground": "#CCCCCC",
+            "green": "#13A10E",
+            "name": "Ubuntu",
+            "purple": "#881798",
+            "red": "#C50F1F",
+            "selectionBackground": "#FFFFFF",
+            "white": "#CCCCCC",
+            "yellow": "#C19C00"
         },
         {
             "background": "#000000",

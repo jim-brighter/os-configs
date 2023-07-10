@@ -22,7 +22,7 @@
     - Steam
     - OBS
 - Install development software
-    - [Install WSL 2](https://docs.microsoft.com/en-us/windows/wsl/install-win10#manual-installation-steps)
+    - [Install WSL 2](https://learn.microsoft.com/en-us/windows/wsl/install)
     - Sublime Text
     - Intellij Community
     - Postman

@@ -40,9 +40,6 @@
     - Python
 - Small configs:
   - create new ssh keys for personal & work github accounts, get new tokens
-  - setup git-clone and gitconfig from this repo
-  - configure aws cli
-  - run git clone script
 
 ---
 

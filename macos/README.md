@@ -33,9 +33,6 @@ brew install argocd awscli doctl git gradle helm jq maven node@18 temurin17
 - Install [Oh My Zsh](https://ohmyz.sh/#install) and [Powerlevel10k](https://github.com/romkatv/powerlevel10k#oh-my-zsh)
 - Small configs:
   - create new ssh keys for personal & work github accounts, get new tokens
-  - setup git-clone and gitconfig from this repo
-  - configure aws cli
-  - run git clone script
 
 ### HoMM3 Setup
 1. Install Wineskin via homebrew (https://github.com/Gcenx/WineskinServer)

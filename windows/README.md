@@ -2,7 +2,7 @@
 - Follow Windows installer until you get to the Desktop
 - Install all available Windows updates
 - Install drivers for chipset, network, audio, and graphics
-- Install Spotify, Netflix, Hulu, Amazon Prime Video, Disney+, Auto Dark Mode, and Messenger from Windows Store
+- Install Spotify, Netflix, Hulu, Amazon Prime Video, Disney+, Auto Dark Mode, Windows HDR Calibration, and Messenger from Windows Store
     - Also a good time to remove bloatware and games
 - Install non-development software:
     - ASUS Armoury Crate
@@ -21,6 +21,7 @@
     - Origin
     - Steam
     - OBS
+    - GOG Galaxy
 - Install development software
     - [Install WSL 2](https://learn.microsoft.com/en-us/windows/wsl/install)
     - Sublime Text
@@ -39,9 +40,6 @@
     - Python
 - Small configs:
   - create new ssh keys for personal & work github accounts, get new tokens
-  - setup git-clone and gitconfig from this repo
-  - configure aws cli
-  - run git clone script
 
 ---
 

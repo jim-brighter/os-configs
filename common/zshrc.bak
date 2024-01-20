@@ -11,10 +11,24 @@ function git-clean() {
 }
 
 function clone-all() {
-    
+
     gh auth status
-    
-    gh auth login
+
+    ssh-add -l
+
+    continue=$(bash -c 'read -p "Continue? (Y/n) " continue; echo $continue')
+
+    if [[ "$continue" == "n" ]]; then
+        return 0
+    fi
+
+    if [[ -z "$1" ]]; then
+        echo "Cloning repos for username"
+    else
+        echo "Cloning repos for $1"
+    fi
 
     gh repo list $1 | awk '{print $1}' | xargs -I{} -n1 gh repo clone {} {}
 }
+
+alias aws-login="aws configure sso --profile default"

@@ -3,6 +3,8 @@ alias la="ls -alh"
 alias l1="ls -1"
 alias ..="cd .."
 
+alias aws-login="aws configure sso --profile default"
+
 # alias update="brew update && brew upgrade; brew autoremove && brew cleanup"
 # alias update="sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y"
 
@@ -31,4 +33,8 @@ function clone-all() {
     gh repo list $1 | awk '{print $1}' | xargs -I{} -n1 gh repo clone {} {}
 }
 
-alias aws-login="aws configure sso --profile default"
+function profile() {
+    export GITHUB_USER=
+    export GITHUB_TOKEN=
+    export AWS_PROFILE=
+}

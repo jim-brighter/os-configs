@@ -1,5 +1,0 @@
-[includeIf "gitdir:~/github/<whatever>/"]
-	path = ~/.gitconfig-<whatever>
-
-[url "git@github-<whatever>"]
-	insteadOf = git@github.com

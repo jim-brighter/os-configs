@@ -6,5 +6,5 @@
 	rebase = false
 [core]
 	autocrlf = input
-[includeIf "gitdir:~/github/<profile>/"]
+[includeIf "gitdir:~/github/<profile-dir>/"]
 	path = ~/.gitconfig-<profile>

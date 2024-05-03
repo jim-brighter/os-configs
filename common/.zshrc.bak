@@ -45,31 +45,3 @@ function clone-all() {
     gh repo list $1 | awk '{print $1}' | xargs -I{} gh repo clone {} {}
 }
 
-function <profile>() {
-    export GITHUB_USER=
-    export GITHUB_TOKEN=
-    export AWS_PROFILE=
-
-    tput setaf 202; echo "<profile> profile loaded"; tput sgr0
-}
-
-function <profile>_reset() {
-    unset GITHUB_USER
-    unset GITHUB_TOKEN
-    unset AWS_PROFILE
-}
-
-function env_on_chdir() {
-    case $PWD in
-        $HOME/<profile-dir>/* )
-            <profile>
-            ;;
-        * )
-            <profile>_reset
-            ;;
-    esac
-}
-
-add-zsh-hook chpwd env_on_chdir
-
-env_on_chdir

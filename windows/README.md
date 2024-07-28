@@ -2,54 +2,52 @@
 - Follow Windows installer until you get to the Desktop
 - Install all available Windows updates
 - Install drivers for chipset, network, audio, and graphics
-- Install Spotify, Netflix, Hulu, Amazon Prime Video, Disney+, Auto Dark Mode, Windows HDR Calibration, and Messenger from Windows Store
-    - Also a good time to remove bloatware and games
-- Install non-development software:
-    - ASUS Armoury Crate
-    - NZXT CAM
-    - Ryzen Master
-    - Logitech G Hub
-    - Brother Drivers
-    - Oculus
-    - Battle.net
-    - Discord
-    - Epic Games Launcher
-    - Ubisoft Connect
-    - Google Chrome
-    - NordPass
-    - NordVPN
-    - Origin
-    - Steam
-    - OBS
-    - GOG Galaxy
-- Install development software
-    - [Install WSL 2](https://learn.microsoft.com/en-us/windows/wsl/install)
-    - Sublime Text
-    - Intellij Community
-    - Postman
-    - Visual Studio Code
-    - Docker Desktop
-- Install within WSL:
-    - Git
-    - Github CLI
-    - Temurin 17
-    - AWS CLI
-    - JQ
-    - Helm
-    - Nodejs
-    - Python
-- Small configs:
-  - create new ssh keys for personal & work github accounts, get new tokens
+- Check for and remove bloatware
+- Install Windows software:
 
----
+| Program | Location |
+| :--- | :--- |
+| Spotify | Windows Store |
+| Netflix | Windows Store |
+| Hulu | Windows Store |
+| Prime Video | Windows Store |
+| Disney+ | Windows Store |
+| Windows HDR Calibration | Windows Store |
+| Messenger | Windows Store |
+| ASUS Armoury Crate | website |
+| NZXT CAM | website |
+| AMD Ryzen Master | website |
+| Logitech G Hub | website |
+| Brother Printer Drivers | website |
+| Google Chrome | website |
+| Discord | website |
+| NordPass | website |
+| NordVPN | website |
+| Steam | website |
+| EA | website |
+| Epic Games Launcher | website |
+| GOG Galaxy | website |
+| Ubisoft Connect | website |
+| Battle.net | website |
+| Oculus | website |
+| WSL2 | Windows |
+| IntelliJ Community | website |
+| Postman | website |
+| VS Code | website |
+| Docker Desktop | website |
+
+- Install WSL software:
+
+| Program | Location |
+| :--- | :--- |
+| Git | apt |
+| Github CLI | website |
+| openjdk | apt |
+| AWS CLI | website |
+| Node | website |
+| Python | apt |
+
+----
 
 ### Fixing Weird Internet Issues
 - Disable IPv6 in ethernet adapter properties
-
-### Fixing Slow Performance in IntelliJ in WSL
-- Add exclusions to Windows Security:
-    - \\wsl$\Ubuntu
-    - \\wsl.localhost\Ubuntu
-    - C:\Program Files\JetBrains
-    - %LOCALAPPDATA%\JetBrains
-    - %APPDATA%\JetBrains

@@ -1,7 +1,7 @@
 ## Windows 11 Setup Instructions
 - Follow Windows installer until you get to the Desktop
 - Install all available Windows updates
-- Install drivers for chipset, network, audio, and graphics
+- Install newer drivers for motherboard (chipset, network, audio) and graphics if available
 - Check for and remove bloatware
 - Install Windows software:
 

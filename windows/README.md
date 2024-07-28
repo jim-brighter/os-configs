@@ -16,7 +16,6 @@
 | Messenger | Windows Store |
 | ASUS Armoury Crate | website |
 | NZXT CAM | website |
-| AMD Ryzen Master | website |
 | Logitech G Hub | website |
 | Brother Printer Drivers | website |
 | Google Chrome | website |
@@ -41,11 +40,12 @@
 | Program | Location |
 | :--- | :--- |
 | Git | apt |
-| Github CLI | website |
 | openjdk | apt |
+| Python | apt |
+| Github CLI | website |
 | AWS CLI | website |
 | Node | website |
-| Python | apt |
+| jq | website |
 
 ----
 

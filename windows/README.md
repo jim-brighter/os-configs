@@ -38,7 +38,7 @@
 - Install WSL software:
 
 | Program | Location | Why |
-| :--- | :--- |
+| :--- | :--- | :--- |
 | Git | apt | git |
 | openjdk | apt | java dev |
 | Python | apt | python dev |

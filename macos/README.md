@@ -6,33 +6,40 @@
 ```bash
 xcode-select --install
 ```
-- Install [homebrew](https://brew.sh)
-- Install homebrew software
-```bash
-brew install argocd awscli doctl git gradle helm jq maven node@18 temurin17
-```
-- Install non-homebrew software:
-  - Discord
-  - Docker Desktop
-  - Github CLI
-  - Google Chrome
-  - Intellij Idea CE
-  - iTerm
-  - Messenger
-  - NordVPN
-  - NordPass
-  - Postman
-  - Slack
-  - Spotify
-  - Steam
-  - Sublime Text
-  - Raspberry Pi Imager
-  - Rectangle Pro
-  - Visual Studio Code
-  - Zoom
-- Install [Oh My Zsh](https://ohmyz.sh/#install) and [Powerlevel10k](https://github.com/romkatv/powerlevel10k#oh-my-zsh)
+- Install software
+
+| Program | Location |
+| :--- | :--- |
+| Homebrew | website |
+| AWS CLI | brew |
+| git | brew |
+| gradle | brew |
+| jq | brew |
+| maven | brew |
+| Node | brew |
+| Temurin JDK | brew |
+| Docker Desktop | website |
+| Github CLI | website |
+| Google Chrome | website |
+| IntelliJ | website |
+| iTerm | website |
+| Messenger | website |
+| NordPass | website |
+| NordVPN | website |
+| Postman | website |
+| Spotify | website |
+| Steam | website |
+| Raspberry Pi Imager | website |
+| Rectangle Pro | website |
+| VS Code | website |
+| Zoom | website |
+| Oh My Zsh | website |
+| Powerlevel10k | website |
+
 - Small configs:
   - create new ssh keys for personal & work github accounts, get new tokens
+
+----
 
 ### HoMM3 Setup
 1. Install Wineskin via homebrew (https://github.com/Gcenx/WineskinServer)

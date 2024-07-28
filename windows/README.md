@@ -6,7 +6,7 @@
 - Install Windows software:
 
 | Program | Location | Why |
-| :--- | :--- |
+| :--- | :--- | :--- |
 | Spotify | Windows Store | music |
 | Netflix | Windows Store | higher quality streaming |
 | Hulu | Windows Store | higher quality streaming |

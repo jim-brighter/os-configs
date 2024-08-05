@@ -36,9 +36,6 @@ xcode-select --install
 | Oh My Zsh | website |
 | Powerlevel10k | website |
 
-- Small configs:
-  - create new ssh keys for personal & work github accounts, get new tokens
-
 ----
 
 ### HoMM3 Setup

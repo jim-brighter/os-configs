@@ -1,0 +1,1 @@
+0 12 * * 2 /usr/local/bin/pihole -up > /home/jim/pihole-up-$(date -I).log 2>&1 && find /home/jim -type f -name "pihole-up*" -mtime +30 -delete

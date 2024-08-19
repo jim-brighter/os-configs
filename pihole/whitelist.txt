@@ -1,0 +1,3 @@
+s.youtube.com
+(\.|^)hulu\.com$
+cdn.jsdelivr.net

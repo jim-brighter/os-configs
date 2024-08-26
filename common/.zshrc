@@ -6,7 +6,7 @@ alias ..="cd .."
 # alias update="brew update && brew upgrade; brew autoremove && brew cleanup"
 # alias update="sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y"
 
-function git-clean() {
+function git-clean-branches() {
     git branch -vv | grep ': gone' | awk '{print $1}' | xargs git branch -D
 }
 

@@ -10,6 +10,14 @@ function git-clean() {
     git branch -vv | grep ': gone' | awk '{print $1}' | xargs git branch -D
 }
 
+function git-clean-tags() {
+    git for-each-ref --sort=creatordate --format '%(refname) %(creatordate)' refs/tags | head -n -5 | awk '{print $1}' | xargs -I{} git push --delete origin {} && git tag -d {}
+}
+
+function git-clean-local-tags() {
+
+}
+
 function clone() {
     repo=$(echo $1 | cut -d':' -f2 | sed -e 's/\.git$//')
 

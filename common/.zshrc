@@ -11,6 +11,7 @@ function git-clean() {
 }
 
 function git-clean-tags() {
+    gh release ls -L 100 -O asc | head -n -5 | awk '{print $1}' | xargs -I{} gh release delete {}
     git for-each-ref --sort=creatordate --format '%(refname) %(creatordate)' refs/tags | head -n -5 | awk '{print $1}' | xargs -I{} git push --delete origin {} && git tag -d {}
 }
 

@@ -42,6 +42,5 @@ xcode-select --install
 1. Install Wineskin via homebrew (https://github.com/Gcenx/WineskinServer)
 1. Create a new wrapper with the "normal" (non-D3DMetal) engine
 1. Install HoMM3 complete from GOG in the wrapper
-1. Install HD Mod in the wrapper
 1. Install HotA in the wrapper
-1. Set the Windows EXE to HD_Launcher.exe and then ultimately `Heroes3 HD.exe`
+1. Set the Windows EXE to HD_Launcher.exe

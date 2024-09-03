@@ -7,12 +7,15 @@ alias ..="cd .."
 # alias update="sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y"
 
 function git-clean-branches() {
+    git fetch -pP
     git branch -vv | grep ': gone' | awk '{print $1}' | xargs git branch -D
 }
 
 function git-clean-tags() {
-    gh release ls -L 100 -O asc | head -n -5 | awk '{print $1}' | xargs -I{} gh release delete {}
-    git for-each-ref --sort=creatordate --format '%(refname) %(creatordate)' refs/tags | head -n -5 | awk '{print $1}' | xargs -I{} sh -c 'git push --delete origin {} && git tag -d $(echo {} | sed -e "s|refs/tags/||g")'
+    git fetch -pP
+    gh release ls -L 100 -O desc | tail -n +11 | awk '{print $1}' | xargs -I{} gh release delete {}
+    git for-each-ref --sort=-creatordate --format '%(refname) %(creatordate)' refs/tags | tail -n +11 | awk '{print $1}' | xargs git push --delete origin
+    git fetch -pP
 }
 
 function clone() {

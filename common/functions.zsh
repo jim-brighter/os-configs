@@ -1,13 +1,3 @@
-alias l="ls -lh"
-alias la="ls -alh"
-alias l1="ls -1"
-alias ..="cd .."
-
-alias aws-login="aws configure sso --profile default"
-
-# alias update="brew update && brew upgrade; brew autoremove && brew cleanup"
-# alias update="sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y"
-
 function git-clean-branches() {
     git fetch -pP
     git branch -vv | grep ': gone' | awk '{print $1}' | xargs git branch -D

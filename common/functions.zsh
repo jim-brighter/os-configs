@@ -44,3 +44,20 @@ function clone-all() {
 
     gh repo ls --no-archived $1 | awk '{print $1}' | xargs -I{} gh repo clone {} {}
 }
+
+function start-docker() {
+    if [[ "$OSTYPE" =~ ^darwin.* ]]; then
+        open /Applications/Docker.app
+    else
+        /mnt/c/Program\ Files/Docker/Docker/Docker\ Desktop.exe
+    fi
+}
+
+function update() {
+    if [[ "$OSTYPE" =~ ^darwin.* ]]; then
+        brew update && brew upgrade; brew autoremove && brew cleanup
+    else
+        sudo apt update && sudo apt full-upgrade -y; sudo apt autoremove -y
+    fi
+}
+

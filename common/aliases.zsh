@@ -5,4 +5,3 @@ alias ..="cd .."
 
 alias aws-login="aws configure sso --profile default"
 
-alias update="brew update && brew upgrade; brew autoremove && brew cleanup"

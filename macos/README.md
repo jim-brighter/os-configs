@@ -8,33 +8,33 @@ xcode-select --install
 ```
 - Install software
 
-| Program | Location |
-| :--- | :--- |
-| Homebrew | website |
-| AWS CLI | brew |
-| git | brew |
-| gradle | brew |
-| jq | brew |
-| maven | brew |
-| Node | brew |
-| Temurin JDK | brew |
-| Docker Desktop | website |
-| Github CLI | website |
-| Google Chrome | website |
-| IntelliJ | website |
-| iTerm | website |
-| Messenger | website |
-| NordPass | website |
-| NordVPN | website |
-| Postman | website |
-| Spotify | website |
-| Steam | website |
-| Raspberry Pi Imager | website |
-| Rectangle Pro | website |
-| VS Code | website |
-| Zoom | website |
-| Oh My Zsh | website |
-| Powerlevel10k | website |
+| Program             | Location |
+| :---                | :---     |
+| Homebrew            | website  |
+| AWS CLI             | brew     |
+| git                 | brew     |
+| gradle              | brew     |
+| jq                  | brew     |
+| maven               | brew     |
+| Node                | brew     |
+| Temurin JDK         | brew     |
+| Docker Desktop      | website  |
+| Github CLI          | website  |
+| Google Chrome       | website  |
+| IntelliJ            | website  |
+| iTerm               | website  |
+| Messenger           | website  |
+| NordPass            | website  |
+| NordVPN             | website  |
+| Postman             | website  |
+| Spotify             | website  |
+| Steam               | website  |
+| Raspberry Pi Imager | website  |
+| Rectangle Pro       | website  |
+| VS Code             | website  |
+| Zoom                | website  |
+| Oh My Zsh           | website  |
+| Powerlevel10k       | github   |
 
 ----
 

@@ -18,6 +18,7 @@ xcode-select --install
 | maven               | brew     |
 | Node                | brew     |
 | Temurin JDK         | brew     |
+| Brother Software    | website  |
 | Docker Desktop      | website  |
 | Github CLI          | website  |
 | Google Chrome       | website  |

@@ -3,13 +3,6 @@ function git-clean-branches() {
     git branch -vv | grep ': gone' | awk '{print $1}' | xargs git branch -D
 }
 
-function git-clean-tags() {
-    git fetch -pP
-    gh release ls -L 100 -O desc | tail -n +11 | awk '{print $1}' | xargs -I{} gh release delete {}
-    git for-each-ref --sort=-creatordate --format '%(refname) %(creatordate)' refs/tags | tail -n +11 | awk '{print $1}' | xargs git push --delete origin
-    git fetch -pP
-}
-
 function clone() {
     repo=$(echo $1 | cut -d':' -f2 | sed -e 's/\.git$//')
 

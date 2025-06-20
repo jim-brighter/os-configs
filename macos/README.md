@@ -10,9 +10,11 @@ xcode-select --install
 
 | Program             | Location |
 | :---                | :---     |
+| Oh My Zsh           | website  |
 | Homebrew            | website  |
 | AWS CLI             | brew     |
 | git                 | brew     |
+| Github CLI          | brew     |
 | gradle              | brew     |
 | jq                  | brew     |
 | maven               | brew     |
@@ -20,12 +22,10 @@ xcode-select --install
 | Temurin JDK         | brew     |
 | Brother Software    | website  |
 | Docker Desktop      | website  |
-| Github CLI          | website  |
 | Google Chrome       | website  |
 | IntelliJ            | website  |
 | iTerm               | website  |
 | Messenger           | website  |
-| NordPass            | website  |
 | NordVPN             | website  |
 | Postman             | website  |
 | Spotify             | website  |
@@ -34,8 +34,6 @@ xcode-select --install
 | Rectangle Pro       | website  |
 | VS Code             | website  |
 | Zoom                | website  |
-| Oh My Zsh           | website  |
-| Powerlevel10k       | github   |
 
 ----
 

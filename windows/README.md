@@ -40,5 +40,8 @@
 
 ----
 
-### Fixing Weird Internet Issues
-- Disable IPv6 in ethernet adapter properties
+### Fixes
+| Problem | Solution |
+| :---    | :---     |
+| Internet connectivity or loading problems | Disable IPv6 in ethernet adapter properties |
+| Colors look washed out/dull | Disable "Automatically manage color" in Display Settings |

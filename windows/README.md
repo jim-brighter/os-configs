@@ -8,7 +8,6 @@
 | Program                 | Location      |
 | :---                    | :---          |
 | Spotify                 | Windows Store |
-| Messenger               | Windows Store |
 | Windows HDR Calibration | Windows Store |
 | ASUS Armoury Crate      | website       |
 | NZXT CAM                | website       |

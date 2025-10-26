@@ -13,7 +13,6 @@ xcode-select --install
 | Oh My Zsh           | website  |
 | Homebrew            | website  |
 | AWS CLI             | brew     |
-| git                 | brew     |
 | Github CLI          | brew     |
 | gradle              | brew     |
 | jq                  | brew     |
@@ -25,13 +24,12 @@ xcode-select --install
 | Google Chrome       | website  |
 | IntelliJ            | website  |
 | iTerm               | website  |
-| Messenger           | website  |
 | NordVPN             | website  |
 | Postman             | website  |
 | Spotify             | website  |
 | Steam               | website  |
 | Raspberry Pi Imager | website  |
-| Rectangle Pro       | website  |
+| Rectangle.          | website  |
 | VS Code             | website  |
 | Zoom                | website  |
 

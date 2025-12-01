@@ -13,3 +13,4 @@
     maxbackups="7"
     ```
 1. Follow instructions in [pihole readme](../pihole/README.md) for setting up unattended upgrades
+1. Add steam id to `.config/unity3d/IronGate/Valheim/adminlist.txt` for admin rights

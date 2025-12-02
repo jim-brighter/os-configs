@@ -7,6 +7,7 @@
     querymode="2"
     querytype="protocol-valve"
     ```
+    gamedig is buggy so beware
 1. Modify `lgsm/config-lgsm/vhserver/common.cfg` to prune old backups:
     ```bash
     stats="on"

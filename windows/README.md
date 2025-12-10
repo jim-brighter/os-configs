@@ -1,42 +1,24 @@
 ## Windows 11 Setup Instructions
 - Follow Windows installer until you get to the Desktop
 - Install all available Windows updates
-- Install newer drivers for motherboard (chipset, network, audio) and graphics if available
+- Install Armoury Create and Nvidia App, then install newer drivers for motherboard (chipset, network, audio) and graphics
 - Check for and remove bloatware
 - Install Windows software:
-
-| Program                 | Location      |
-| :---                    | :---          |
-| Spotify                 | Windows Store |
-| Windows HDR Calibration | Windows Store |
-| ASUS Armoury Crate      | website       |
-| NZXT CAM                | website       |
-| Logitech G Hub          | website       |
-| Google Chrome           | website       |
-| Discord                 | website       |
-| Steam                   | website       |
-| EA                      | website       |
-| Epic Games Launcher     | website       |
-| GOG Galaxy              | website       |
-| Ubisoft Connect         | website       |
-| Battle.net              | website       |
-| WSL2                    | Windows       |
-| IntelliJ Community      | website       |
-| Postman                 | website       |
-| VS Code                 | website       |
-| Docker Desktop          | website       |
-
-- Install WSL software:
-
-| Program    | Location |
-| :---       | :---     |
-| Oh My Zsh  | website  |
-| openjdk    | apt      |
-| Github CLI | brew     |
-| AWS CLI    | brew     |
-| Node       | brew     |
-| jq         | brew     |
-
+  ```powershell
+  winget install `
+  9N7F2SM5D1LR `
+  NZXT.CAM `
+  Logitech.GHUB `
+  Discord.Discord `
+  Valve.Steam `
+  ElectronicArts.EADesktop `
+  EpicGames.EpicGamesLauncher `
+  GOG.Galaxy `
+  Ubisoft.Connect `
+  Blizzard.BattleNet `
+  REALiX.HWiNFO `
+  Mojang.MinecraftLauncher
+  ```
 ----
 
 ### Fixes

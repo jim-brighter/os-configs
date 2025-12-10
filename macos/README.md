@@ -29,7 +29,7 @@ xcode-select --install
 | Spotify             | website  |
 | Steam               | website  |
 | Raspberry Pi Imager | website  |
-| Rectangle.          | website  |
+| Rectangle           | website  |
 | VS Code             | website  |
 | Zoom                | website  |
 

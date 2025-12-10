@@ -7,6 +7,7 @@
   ```powershell
   winget install `
   9N7F2SM5D1LR `
+  Google.Chrome `
   NZXT.CAM `
   Logitech.GHUB `
   Discord.Discord `

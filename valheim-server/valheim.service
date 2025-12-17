@@ -1,0 +1,17 @@
+[Unit]
+Description=Valheim Dedicated Server
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Environment=SteamAppId=892970
+Environment=LD_LIBRARY_PATH=/home/vhserver/valheim_server/linux64:$LD_LIBRARY_PATH
+Type=simple
+Restart=on-failure
+RestartSec=10
+KillSignal=SIGINT
+WorkingDirectory=/home/vhserver/valheim_server
+ExecStart=/home/vhserver/valheim_server/valheim_server.x86_64 -nographics -batchmode -name '<SERVER NAME>' -password <PASSWORD> -port <PORT> -world <WORLD> -public 0 -savedir '/home/vhserver/valheim_server/valheim_data' -saveinterval 1800 -backups 7 -backupshort 7200 -backuplong 43200 -instanceid 1 -modifier deathPenalty casual -modifier raids less -modifier portals casual
+
+[Install]
+WantedBy=default.target

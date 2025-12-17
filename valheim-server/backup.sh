@@ -4,9 +4,12 @@ set -ex
 
 cd /home/vhserver
 
-./vhserver stop
-./vhserver backup
-./vhserver start
+mkdir -p ./backups/archives
 
-# requires s3cmd installed and configured: https://docs.digitalocean.com/products/spaces/reference/s3cmd/
-./s3cmd-2.4.0/s3cmd sync --delete-removed lgsm/backup/ s3://<bucket>
+systemctl --user stop valheim
+
+tar -czvf ./backups/archives/valheim-data-$(date +"%Y-%m-%d_%H%M%S_%Z").tar.gz ./valheim_server/valheim_data
+
+systemctl --user start valheim
+
+aws s3 sync --delete --no-paginate ./backups/archives/ s3://<bucket>

@@ -1,0 +1,2 @@
+5 5 * * * /home/vhserver/backups/backup-cron.sh
+30 * * * * /home/vhserver/updates/update-cron.sh

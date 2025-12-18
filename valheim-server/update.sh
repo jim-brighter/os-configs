@@ -2,6 +2,9 @@
 
 set -ex
 
+export XDG_RUNTIME_DIR="/run/user/$UID"
+export DBUS_SESSION_BUS_ADDRESS="unix:path=${XDG_RUNTIME_DIR}/bus"
+
 cd /home/vhserver
 
 localversion=$(grep buildid ./valheim_server/steamapps/appmanifest_896660.acf | tr '[:blank:]"' ' ' | tr -s ' ' | cut -d\  -f3)

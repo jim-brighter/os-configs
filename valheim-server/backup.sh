@@ -15,4 +15,4 @@ tar -czvf ./backups/archives/valheim-data-$(date +"%Y-%m-%d_%H%M%S_%Z").tar.gz .
 
 systemctl --user start valheim
 
-aws s3 sync --delete --no-paginate ./backups/archives/ s3://<bucket>
+/usr/local/bin/aws s3 sync --delete --no-paginate ./backups/archives/ s3://<bucket>

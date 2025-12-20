@@ -1,6 +1,9 @@
 # Valheim Server
 ## As root
 ```bash
+nano /etc/ssh/sshd_config; # turn off password auth
+systemctl restart ssh;
+
 getconf PAGESIZE; # verify 16k
 nano /boot/firmware/config.txt; # add to top of file: kernel=kernel8.img
 
@@ -9,9 +12,6 @@ reboot now;
 getconf PAGESIZE; # verify 4k
 
 dpkg --add-architecture armhf && apt-get update;
-
-nano /etc/ssh/sshd_config; # turn off password auth
-systemctl restart ssh;
 
 apt update \
 && apt full-upgrade -y \

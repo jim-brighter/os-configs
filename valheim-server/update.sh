@@ -20,7 +20,7 @@ if [ "$localversion" -lt "$newestversion" ]; then
 
     systemctl --user stop valheim
 
-    ./steamcmd/steamcmd.sh +@sSteamCmdForcePlatformType linux +login anonymous +force_install_dir ./valheim_server +app_update 896660 +quit
+    ./steamcmd/steamcmd.sh +force_install_dir /home/vhserver/valheim_server +@sSteamCmdForcePlatformType linux +login anonymous +app_update 896660 validate +quit
 
     systemctl --user start valheim
 else

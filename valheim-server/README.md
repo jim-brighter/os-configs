@@ -29,6 +29,9 @@ vim /etc/apt/apt.conf.d/50unattended-upgrades; # configure upgrades
 cat /etc/apt/apt.conf.d/20auto-upgrades; # verify enabled
 systemctl list-timers apt-daily*; # verify timers
 dpkg-reconfigure exim4-config; # setup SMTP server
+
+# Check for current instructions: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+curl -fsSL https://awscli.amazonaws.com/v2/install.sh | sudo bash -s -- --system
 ```
 
 ## As vhserver
@@ -63,6 +66,11 @@ cd ~/steamcmd;
 curl -sqL "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz" | tar zxvf -;
 ./steamcmd.sh; # verify it works, then quit
 ```
+#### SteamCMD and ARM64
+As of Sept 2026: after installing SteamCMD, need to symlink arm64 to linux32
+```bash
+ln -sfn /home/vhserver/steamcmd/linux32/steamcmd /home/vhserver/steamcmd/linuxarm64/steamcmd
+```
 
 ### Valheim Server
 ```bash
@@ -83,6 +91,9 @@ May need to add below to `~/.profile`:
 export XDG_RUNTIME_DIR="/run/user/$UID"
 export DBUS_SESSION_BUS_ADDRESS="unix:path=${XDG_RUNTIME_DIR}/bus"
 ```
+
+### Monitoring
+Setup the agent script and monitoring stack from https://github.com/jim-brighter/valheim-monitor
 
 ### Other
 Setup crontab for backups and updates

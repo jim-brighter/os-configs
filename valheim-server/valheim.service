@@ -4,8 +4,13 @@ Wants=network-online.target
 After=network-online.target
 
 [Service]
+Environment="BOX64_PATH=.:bin:/usr/local/bin:/usr/bin"
+Environment="BOX64_LD_LIBRARY_PATH=/home/vhserver/valheim_server/doorstop_libs:/home/vhserver/valheim_server/linux64:$LD_LIBRARY_PATH"
+Environment="DOORSTOP_ENABLED=1"
+Environment="DOORSTOP_TARGET_ASSEMBLY=/home/vhserver/valheim_server/BepInEx/core/BepInEx.Preloader.dll"
+Environment="LD_LIBRARY_PATH=/home/vhserver/valheim_server/doorstop_libs:/home/vhserver/valheim_server/linux64:$LD_LIBRARY_PATH"
+Environment="LD_PRELOAD=libdoorstop_x64.so"
 Environment=SteamAppId=892970
-Environment=LD_LIBRARY_PATH=/home/vhserver/valheim_server/linux64:$LD_LIBRARY_PATH
 Type=simple
 Restart=on-failure
 RestartSec=10

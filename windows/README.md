@@ -6,8 +6,8 @@
 - Install Windows software:
   ```powershell
   winget install `
-  XP8CLZL93F5Z4P # NVIDIA App `
-  9N7F2SM5D1LR # Windows HDR Calibration Tool `
+  XP8CLZL93F5Z4P ` # NVIDIA App
+  9N7F2SM5D1LR ` # Windows HDR Calibration Tool
   Google.Chrome `
   NZXT.CAM `
   Logitech.GHUB `
